@@ -1,0 +1,27 @@
+/* #idname{
+    color:blueviolet;
+    background-color: azure;
+}
+.classnamea
+{
+    color:rgba(255, 0, 98, 0.469);
+}
+*{
+    color:brown;
+}
+
+h5,p{
+    color:blue;
+} 
+div p{
+    color:blueviolet
+}
+div > p{
+    color:red;
+}
+div + p{
+    color:aqua;
+}*/
+div ~ p{
+    color:green;
+}

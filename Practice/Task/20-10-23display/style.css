@@ -1,0 +1,88 @@
+.main{
+    background-color:white;
+    border: 2px black;
+}
+.a{
+    border: solid 2px black;
+    width:60%;
+    height: 100px;
+    margin: 20px;
+}
+.b{
+    border: solid 2px black;
+    width:60%;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+}
+.c{
+    border: solid 2px black;
+    width:60%;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.d{
+    border: solid 2px black;
+    width:60%;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    justify-content: end;
+}
+.e{
+    border: solid 2px black;
+    width:60%;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.f{
+    border: solid 2px black;
+    width:60%;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.g{
+    border: solid 2px black;
+    width:60%;
+    height: 100px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.b1,.c1,.d1,.e1,.f1,.g1{
+    border: solid 2px black;
+    background-color: rgb(251, 225, 249);
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+}
+.b2,.c2,.d2,.e2,.f2,.g2{
+    border: solid 2px black;
+    background-color: rgb(223, 163, 218);
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+
+}
+.b3,.c3,.d3,.e3,.f3,.g3{
+    border: solid 2px black;
+    background-color:rgb(201, 201, 68);
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+}
+.col{
+    width: 80px;
+    height: 300px;
+    border: 2px solid;
+    display: flex;
+}

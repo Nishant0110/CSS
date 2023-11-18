@@ -1,0 +1,26 @@
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+i {
+    margin: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border: 2px black solid;
+}
+
+ul li {
+    display: inline-block;
+margin:10px}
+.logo{
+    color: rgb(112, 182, 244);
+    font-weight:bold;
+    font-size:30px;
+    font-family: ;
+}

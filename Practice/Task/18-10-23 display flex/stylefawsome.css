@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(72, 71, 71);
+    height: 80px;
+}
+
+li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: whitesmoke;
+}
+
+h1 {
+    display: inline;
+}
+
+.logo i {
+    margin: 0 10px;
+}
+
+.logo {
+    color: whitesmoke;
+}
+
+.link ul i {
+    color: whitesmoke;
+    margin-right: 10px
+}
