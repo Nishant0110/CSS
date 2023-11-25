@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* sec-1 */
+.navbar {
+    padding: 10px 50px;
+
+}
+
+.sec-1 {
+    width: 100%;
+    background-image: url(./img/bg1.png);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.dispflex {
+    display: flex;
+}
+
+.aic {
+    align-items: center;
+}
+
+.jcb {
+    justify-content: space-between;
+}
+
+.top-head {
+    background-color: #ffffff;
+}
+
+.icon ul li {
+    display: inline-block;
+}
+
+.link ul li {
+    display: inline-block;
+}
+
+.icon i {
+    color: black;
+    margin: 10px;
+}
+
+.link a {
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.col-1 {
+    width: 50%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.mainhometext {
+
+    align-items: end;
+
+}
+
+.head h2 {
+    font-size: 129px;
+    line-height: 109px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "font-family: 'Poppins', sans-serif;";
+}
+
+.lorem {
+    padding: 15px 0;
+}
+
+.lorem p {
+    width: 75%;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #ffffff;
+    font-family: "lato"
+
+}
+
+.clickhear {
+    padding-bottom: 65px;
+}
+
+.clickhear button {
+    background-color: #f56131;
+    padding: 5px 25px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+}
+
+.row {
+    padding: 90px 0;
+}
+
+/* .sec-2 {
+    width: 100%;
+} */
+
+.sec2r1c1 {
+    width: 50%;
+}
+
+.sec2r1c1 img {
+    width: 100%;
+    background-size: cover;
+}
+
+.sec2r1c2 {
+    width: 50%;
+    background-color: #2f2339;
+    padding-left: 50px;
+}
+
+.sec2head h3 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;;
+}
