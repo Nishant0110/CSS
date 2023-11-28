@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Section-1 */
+.nav {}
+
+.navrow1 {
+    display: flex;
+}
+.navrow1col-1 ul li a{
+    display: inline-block;
+}
