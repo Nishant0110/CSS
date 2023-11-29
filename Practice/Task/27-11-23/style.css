@@ -4,6 +4,11 @@
     color: black
 }
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .row1 {
     display: flex;
     justify-content: space-between;
@@ -11,7 +16,7 @@
 }
 
 .row1col1 {
-    width: 100px;
+    width: 100%;
 }
 
 .row1col1 img {
@@ -22,21 +27,22 @@
 .row1col2 ul li {
     display: inline-block;
     text-align: center;
-
 }
+
 /* mainsec */
-.mainsecrow1col1 p{
-    width: 300px;
+.mainsecrow1col1 p {
+    width: 100%;
     font-size: 20px;
     padding-left: 100px;
-
 }
-.mainsecrow1col1 h6{
+
+.mainsecrow1col1 h6 {
     width: 300px;
     font-size: 20px;
     padding-left: 100px;
     padding-top: 25px;
 }
+
 .row1col2 ul li a {
     text-decoration: none;
     margin: 5px;
@@ -51,46 +57,49 @@
     width: 100%;
 }
 
-.mainsec {padding-top:100px;
+.mainsec {
+    padding-top: 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
+    flex-wrap: wrap;
 }
+
 .img1 {
+    width: 100%;
     position: absolute;
-    left: 465px;
-    bottom:251px;
-    width: 400px;
+    justify-content: center;
+    /* top: 107px;
+    left: 445px; */
 }
 
 .mainsecrow1 {
-    width: 33.33%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .mainsecrow2 {
-    width: 33.33%;
-    position: relative;
+    width: 100%;
 }
-
-
 
 .img2 {
     padding-left: 25px;
-    width: 250px;
+    width: 100%;
     align-items: center;
+    position: relative;
 }
-.mainsecrow3{
+
+.mainsecrow3 {
     text-align: left;
-    width:33.33%
+    width: 33.33%
 }
-.mainsecrow3 h1{
+
+.mainsecrow3 h1 {
     font-size: 90px;
     text-align: left;
-    padding-right: 100px;position: absolute;
-    left: 764px;
-    bottom:310px;
+    padding-right: 100px;
 }
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -101,6 +110,171 @@
     display: inline-block;
     padding: 10px;
 }
-.footercol1 ul li a i{
-    background-color: black;color: white;
+
+.footercol1 ul li a i {
+    background-color: black;
+    color: white;
+}
+
+/* MediaQuery */
+@media(min-width:576px) {
+    .container {
+        width: 560px;
+    }
+
+    .mainsecrow1 {
+        width: 60%;
+    }
+
+    .mainsecrow2 {
+        width: 51%;
+        padding-left: 100px;
+    }
+
+    .mainsecrow3 {
+        width: 51%;
+    }
+
+    .img1 {
+        width: 40%;
+        top: 337px;
+        left: 105px;
+    }
+
+    .img2 {
+        padding-left: 100px;
+        padding-top: 50px;
+        width: 10%;
+    }
+
+    .mainsecrow1col1 p {
+        width: 50%;
+        font-size: 15px;
+    }
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 740px;
+    }
+
+    .row1col1 {
+        width: 10%;
+    }
+
+    .mainsecrow1 {
+        width: 33.33%;
+    }
+
+    .mainsecrow2 {
+        width: 33.33%;
+    }
+
+    .mainsecrow3 {
+        width: 33.33%;
+    }
+
+    .mainsecrow1col1 p {
+        width: 30%;
+        font-size: 15px;
+    }
+
+}
+
+.img2 {
+    padding-left: 25px;
+    width: 60%;
+    align-items: center;
+
+}
+
+.img1 {
+    width: 30%;
+    top: 192px;
+    left: 237px;
+}
+
+
+@media(min-width:992px) {
+    .container {
+        width: 980px;
+    }
+
+    .row1col1 {
+        width: 10%;
+    }
+
+    .mainsecrow1 {
+        width: 33.33%;
+    }
+
+    .mainsecrow2 {
+        width: 33.33%;
+    }
+
+    .mainsecrow1col1 p {
+        width: 300px;
+        font-size: 20px;
+        padding-left: 100px;
+
+    }
+
+    .img2 {
+        padding-left: 25px;
+        width: 70%;
+        align-items: center;
+
+    }
+
+    .img1 {
+        width: 30%;
+        top: 151px;
+        left: 324px;
+    }
+
+    .mainsecrow3 h1 {
+        font-size: 90px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1180px;
+    }
+
+    .row1col1 {
+        width: 10%;
+    }
+
+    .mainsecrow1 {
+        width: 33.33%;
+    }
+
+    .mainsecrow2 {
+        width: 33.33%;
+    }
+
+    .mainsecrow1col1 p {
+        width: 100%;
+        font-size: 20px;
+        padding-left: 10px;
+
+    }
+
+    .img2 {
+        padding-left: 25px;
+        width: 80%;
+        align-items: center;
+    }
+
+    .img1 {
+        width: 35%;
+        top: 129px;
+        left: 489px;
+    }
+
+    .mainsecrow3 h1 {
+        font-size: 90px;
+        padding-left: 100px;
+    }
 }
