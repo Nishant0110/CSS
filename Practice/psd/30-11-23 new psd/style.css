@@ -1,0 +1,126 @@
+* {
+    color: black;
+}
+
+.navbar {
+    align-items: center;
+}
+
+.statusbar {
+    border-radius: 8px;
+    background-color: hsl(35, 100%, 50%);
+    text-align: center;
+}
+
+.statusbar p {
+    font-size: 1.1em;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 10%;
+    ;
+}
+
+.logo img {
+    background-color: hsl(35, 100%, 50%);
+    width: 100%;
+}
+
+.link ul li {
+    display: inline-block;
+}
+
+.link ul li a {
+    text-decoration: none;
+    margin: 0.5em;
+    font-size: 0.9em;
+}
+
+.box2 .btn1 {
+    background-color: transparent;
+    border: none;
+
+
+}
+
+.box2 .btn2 {
+    background-color: hsl(35, 100%, 50%);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 0.4em;
+}
+
+/* herosection */
+.section-1 {
+    background: #F7F7F8;
+}
+
+.herosec {
+    width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3.3em;
+}
+
+.textmainsec {}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.icon img {
+    border-radius: 6px;
+    background: #FFF4E5;
+
+}
+
+.headh1 h1 {
+    font-size: 1.6em;
+}
+
+.textmainsec h2 {
+    font-size: 1.1em;
+
+}
+
+.textmainsec p {
+    font-size: 0.6em;
+
+}
+
+.textmainsec .btn1 {
+    background-color: hsl(35, 100%, 50%);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 0.4em;
+}
+
+.textmainsec .btn2 {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.4em;
+}
