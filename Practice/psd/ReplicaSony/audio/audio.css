@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+.navbar {
+    padding: 1em 0;
+}
+
+.alignitem {
+    align-items: center;
+}
+
+.margin {
+    margin: 1.5em 0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo {
+    width: 10%;
+}
+
+.manubar ul li,
+.sec5 .col20 ul li,
+.about ul li,
+.content ul li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.manubar ul li a,
+.sec5 .col20 ul li a,
+.about ul li a,
+.content ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text {
+    padding: 1.5em 0;
+}
+
+.text h2 {
+    font-size: 2em;
+
+}
+
+.link ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.link ul li {
+    display: inline-block;
+    margin: 2em;
+}
+
+#underline {
+    text-decoration: underline 0.5em;
+}
+
+.col15 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.col24 {
+    width: 100%;
+}
+
+.col30 {
+    width: 100%;
+}
+
+.img img {
+    width: 100%;
+    display: block;
+}
+
+.col20 {
+    width: 100%;
+}
+
+.col24box {
+    background-color: #F1F4F7;
+}
+
+.jcb {
+    justify-content: space-between;
+}
+
+.text1 a p {
+    margin: 1em 0;
+}
+
+.text1 a,
+.about a {
+    text-decoration: none;
+    color: black;
+}
+
+.paddingleft {
+    padding-left: 1em;
+}
+
+.text h3 {
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+/* -------------sec3----------------- */
+.box .img {
+    background-color: #F0F4F8;
+    padding: 1em 1em;
+    width: 100%;
+}
+
+.text1 {
+    padding-left: 1em;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.leftright {
+    margin: 0 1em;
+}
+
+/* ---------------sec-4----------- */
+.btn1 {
+    padding: 2em 0;
+    text-align: end;
+}
+
+.btn1 button {
+    padding: 0.2em 5em;
+}
+
+.notes ul {
+    list-style-type: "*  ";
+}
+
+.padding {
+    padding: 1em 0;
+
+}
+
+/* -----------sec-5------------ */
+.bgclrblack {
+    background-color: black;
+}
+
+.btn2 {
+    border: 1px solid rgb(190, 188, 188);
+    padding: 0.3em;
+    margin: 1em 0;
+    width: 90%;
+}
+
+.btn2 input {
+    background-color: transparent;
+}
+
+.btn2 button {
+    background-color: #2D75C7;
+    color: white;
+    padding: 0.7em 1.2em;
+}
+
+.spanfooter {
+    color: rgb(168, 165, 165);
+    font-size: 1.1em;
+}
+
+.col20>ul li {
+    margin: 0.5em 0;
+}
+
+.about {
+    justify-content: end;
+}
+
+.bgcolorgray {
+    background-color: #504D56;
+}
+
+.btn3 button {
+    font-size: 1.5em;
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding: 0.1em 0.3em;
+}
+
+.appicon i {
+    background-color: gray;
+    color: white;
+    padding: 0.3em;
+    font-size: 1.5em;
+}
+
+.appicon a {
+    padding-left: 1em;
+}
+
+.copyright a {
+    display: inline-block;
+    text-decoration: none;
+}
+.content p{
+    color:white;
+}

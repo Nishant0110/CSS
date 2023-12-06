@@ -1,0 +1,101 @@
+@media(min-width: 370px) {
+    .container {
+        width: 320px;
+        margin: 0 auto;
+    }
+    hr {
+        width: 320px;
+    }
+}
+/*  <!-- -----------------------------------------------------------  START MediaQuary mobile -------------------------------------------------------------------> */
+@media(min-width: 576px) {
+    .container {
+        width: 520px;
+        margin: 0 auto;
+    }
+    .col24 {
+        width: 100%;
+        margin: 0.5em 0.5em;
+    }
+    hr {
+        width: 520px;
+    }
+
+    .col20 {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+}
+/*  <!-- -----------------------------------------------------------  START MediaQuary Tablet -------------------------------------------------------------------> */
+@media(min-width: 768px) {
+    .container {
+        width: 720px;
+        margin: 0 auto;
+    }
+    .col15 {
+        width: 40%;
+    }
+    .col24 {
+        width: 45%;
+        margin: 1em auto;
+    }
+    hr {
+        width: 720px;
+    }
+    .col30 {
+        width: 46%;
+        margin: 1em 0.5em;
+    }
+    .col20 {
+        width: 48%;
+        /* margin: 0.5em 0; */
+    }
+}
+/*  <!-- -----------------------------------------------------------  START MediaQuary macbook -------------------------------------------------------------------> */
+@media(min-width: 992px) {
+    .container {
+        width: 920px;
+        margin: 0 auto;
+    }
+    .col15 {
+        width: 15%;
+    }
+    .col24 {
+        width: 24%;
+        margin: 0 auto;
+    }
+    hr {
+        width: 920px;
+    }
+    .col30 {
+        width: 30%;
+        margin: 1em auto;
+    }
+    .col20 {
+        width: 24%;
+    }
+}
+/*  <!-- -----------------------------------------------------------  START MediaQuary Desktop -------------------------------------------------------------------> */
+@media(min-width: 1200px) {
+    .container {
+        width: 1160px;
+        margin: 0 auto;
+    }
+    .col15 {
+        width: 15%;
+    }
+    .col24 {
+        width: 24%;
+        
+    }
+    hr {
+        width: 1160px;
+        margin: 0 auto;
+    }
+    .col30 {
+        width: 30%;
+    }
+    .col20 {
+        width: 20%;
+    }
+}

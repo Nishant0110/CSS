@@ -10,9 +10,12 @@
     width: 100vw;
     background-color: black;
 }
-
+.navbar a:hover{
+    background-color: #87877F;
+    padding: 1.8em;
+}
 .container {
-    width: 100vw;
+    width: 90vw;
     margin: 0 auto;
 }
 .row1 {
@@ -376,6 +379,8 @@ db {
 /* -------------------sec-6------------- */
 .sec-6{
     background-color: #E8EDF3;
+}
+.btn6 button{;
 }
 
 .terms ul li{
