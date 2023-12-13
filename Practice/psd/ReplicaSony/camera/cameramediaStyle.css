@@ -1,0 +1,196 @@
+/*  <!-- -----------------------------------------------------------  START MediaQuary mobile -------------------------------------------------------------------> */
+@media(min-width: 576px) {
+    .container {
+        width: 520px;
+        margin: 0 auto;
+    }
+
+    /* .sec1{
+        background-position: center center;
+    } */
+    .col20 {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+
+    .col15 {
+        width: 100%;
+    }
+
+    .col85 {
+        width: 100%;
+    }
+
+    .btn1 {
+        text-align: center;
+        margin: 6em 1em 1em 0;
+    }
+
+    .con {
+        text-align: center;
+    }
+
+    .col45 {
+        width: 100%;
+    }
+
+    .col25 {
+        width: 50%;
+    }
+
+    .col23 {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .btn2 {
+        width: 100%;
+    }
+
+    .btn2 input {
+        width: 70%;
+    }
+}
+
+/* <!-- -----------------------------------------------------------  START MediaQuary Tablet -------------------------------------------------------------------> */
+@media(min-width: 768px) {
+    .container {
+        width: 720px;
+        margin: 0 auto;
+    }
+
+    .col20 {
+        width: 49%;
+        /* margin: 0.5em 0; */
+    }
+
+    .col15 {
+        width: 50%;
+    }
+
+    .col85 {
+        width: 50%;
+    }
+
+    .btn1 {
+        text-align: right;
+        margin: 6em 1em 1em 0;
+    }
+
+    .con {
+        text-align: left;
+    }
+
+    .col30 {
+        width: 50%;
+        margin: 0.5em 0;
+    }
+
+    /* .col45 {
+        width: 100%;
+    } */
+    .col25 {
+        width: 30%;
+    }
+
+    .col23 {
+        width: 45%;
+        margin: 1em;
+    }
+
+    .btn2 {
+        width: 100%;
+    }
+
+    .btn2 input {
+        width: 50%;
+    }
+}
+
+/*  <!-- -----------------------------------------------------------  START MediaQuary macbook -------------------------------------------------------------------> */
+@media(min-width: 992px) {
+    .container {
+        width: 920px;
+        margin: 0 auto;
+    }
+
+    .col20 {
+        width: 20%;
+    }
+
+    .col15 {
+        width: 30%;
+    }
+
+    .col85 {
+        width: 70%;
+    }
+
+    .col30 {
+        width: 30%;
+    }
+
+    .col45 {
+        width: 49%;
+    }
+
+    .col25 {
+        width: 25%;
+    }
+
+    .col23 {
+        width: 23%;
+    }
+
+    .btn2 {
+        width: 100%;
+    }
+
+    .btn2 input {
+        width: 50%;
+    }
+}
+
+/*  <!-- -----------------------------------------------------------  START MediaQuary Desktop -------------------------------------------------------------------> */
+@media(min-width: 1200px) {
+    .container {
+        width: 1160px;
+        margin: 0 auto;
+    }
+
+    .col20 {
+        width: 20%;
+    }
+
+    .col15 {
+        width: 20%;
+    }
+
+    .col85 {
+        width: 80%;
+    }
+
+    .btn1 {
+        text-align: right;
+        margin-top: 1.5em
+    }
+
+    .col30 {
+        width: 30%;
+    }
+
+    .col45 {
+        width: 49%;
+    }
+
+    /* .col25 {
+        width: 25%;
+    } */
+    .col23 {
+        width: 23%;
+    }
+
+    /* .btn2{
+        width: 100%;
+    } */
+}

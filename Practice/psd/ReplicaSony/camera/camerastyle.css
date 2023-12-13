@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.border {
+    border: 1px solid black;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.jcb {
+    justify-content: space-between;
+}
+/* --------------header---------- */
+.bgclr-blk {
+    background-color: black;
+}
+img {
+    width: 100%;
+    display: block;
+}
+.logo {
+    width: 100px;
+}
+.dispflex {
+    display: flex;
+    flex-wrap: wrap;    /* justify-content: space-between; */
+}
+ul li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+.menubar a {
+    font-size: 1em;
+    color: white;
+}
+.menubar ul li {
+    margin: 1.2em 0 1.2em 0.5em;
+}
+.aic {
+    align-items: center;
+}
+/* ------------------navbar----------------- */
+.menubar1 a {
+    color: #2F3570;
+}
+.navbarmain {
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+}
+.navbarmain ul li {
+    padding: 1.2em 1em;
+}
+.navbarmain h1 {
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+.menubar1 ul li:hover {
+    background-color: #F2F5F9;
+    padding: 1.2em 1em;
+}
+/* --------------------sec-1-------------- */
+.sec1 {
+    background-image: url(./image/bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x:center;
+}
+.sec1main {
+    padding: 6.25em 0;
+}
+.title {
+    width: 30%;
+}
+.title h2 {
+    margin: 2.5em 0;
+    font-size: 2.5em;
+    color: white;
+}
+/************************* sec-2 ****************************/
+.title1 h2 {
+    margin: 1em 0 2em 0
+}
+.col20 {
+    width: 100%;
+}
+.bgcolorgray,
+.content {
+    background-color: #F2F5F9;
+}
+.sec2mainpart {
+    padding: 2em;
+}
+.row1,
+.row2 {
+    margin: 0 0 5em 0;
+}
+.img2 {
+    padding: 1em;
+}
+.p1 {
+    color: #828282;
+    font-size: 1em;
+}
+.con .p2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+.row2main .p4,
+.col15 .p4 {
+    color: #828282;
+    font-size: 0.8em;
+}
+.btn1 {
+    text-align: right;
+    margin-top: 1.5em
+}
+.col15 {
+    width: 100%;
+}
+.col85 {
+    width: 100%;
+}
+.row2main .h5 {
+    font-size: 1.3em;
+    margin: 0.5em 0;
+}
+.spanbold {
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+}
+sup,
+.blue {
+    color: #34568E;
+}
+.p5 {
+    display: inline-block;
+}
+.yellow {
+    color: orange;
+}
+.gray {
+    color: #828282;
+}
+.btn2 {
+    align-items: center;
+    margin: 1em 0 0 0;
+}
+.btn2 button {
+    background-color: #34568E;
+    color: white;
+    padding: 1em;
+    border: none;
+}
+.p5 {
+    color: #828282;
+    font-size: 1.5em;
+}
+/*************** sec-4 **************/
+.content {
+    padding: 2em 1em;
+}
+h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.col30 {
+    width: 100%;
+}
+.content1 .p4 {
+    padding: 1em 0;
+}
+.sec4 .row {
+    margin: 2em 0;
+}
+h3 {
+    margin: 0.3em 0;
+}
+/* sec-5 */
+.col45 {
+    width: 100%;
+}
+.col45 p {
+    margin: 2em 0;
+}
+.col25 a {
+    text-decoration: none;
+    color: #828282;
+}
+.col25 h3 {
+    color: black;
+}
+.col25 {
+    width: 100%;
+}
+/* *******sec-7******* */
+.content2 {
+    text-align: center;
+}
+.btn3 {
+    padding: 2em 0;
+    text-align: end;
+}
+/* .note ul {
+    list-style-type:"* ";
+} */
+.margin {
+    margin: 0.5em 0;
+}
+/* ****************sec-9 *****************/
+.sec9main {
+    padding: 3em 0 0 0;
+}
+.col23 {
+    width: 23%;
+}
+.btn2 {
+    border: 1px solid rgb(190, 188, 188);
+    padding: 0.3em;
+}
+.btn2 input {
+    background-color: transparent;
+    width: 100%;
+    padding: 0.5em 0;
+}
+.btn2 button {
+    background-color: #2D75C7;
+    color: white;
+    padding: 0.7em 2em;
+}
+.sec9 ul li>a {
+    color: white;
+    font-size: 0.8em;
+}
+.sec9 .col23 ul li {
+    margin: 1em 0 0 0;
+    display: block;
+}
+.about1 {
+    justify-content: end;
+}
+.about1 ul li {
+    margin: 2em 2em 0 0;
+}
+.btn3 button {
+    font-size: 1.3em;
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding: 0.1em 0.3em;
+}
+.appicon i {
+    background-color: gray;
+    color: white;
+    padding: 0.3em;
+    font-size: 1.5em;
+}
+.appicon {
+    text-align: center;
+}
+.aic {
+    align-items: center;
+}
+.appicon a {
+    padding-left: 1em;
+}
+.content>p {
+    color: white;
+}
