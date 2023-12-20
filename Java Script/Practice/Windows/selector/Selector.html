@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="sec-1" id="sec-main">
+        <div id="div-1">
+            <h2 name="name1">ffsd</h2>
+            <h1 class="head" id="heading"> Welcome </h1>
+            <p class="pre" id="pre1">Lorem ipsum dolor sit amet.</p>
+            <p class="pre" id="pre2">Lorem ipsum dolor sit amet.</p>
+            <p class="pre" id="pre3">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <input type="text" class="input" id="input-fld">
+        <button id="btn">Dom Data</button>
+    </section>
+</body>
+<script>
+    //Single element selector
+    // let element = document.getElementById("heading")//you only add id
+    // let element = document.querySelector("p")//you can add class(.),id(#),tag name ("")  it select first selectedcontent
+
+    //Multiple element selector
+    // let element = document.getElementsByClassName("pre")
+
+    // let element1 = document.getElementsByTagName("div-1")
+    
+    // let element2 = document.getElementsByName("name1")
+    // console.log(element1, element2);
+
+    // let element=document.querySelectorAll(".head")
+    // console.log(element);
+
+
+    // innerhtml
+    // let element=document.querySelector("h1").innerHTML="new"
+    // let element=document.querySelector(".pre").innerText="hi"
+    let element=document.querySelector(".pre").innerHTML="<span>how are you</span>"
+    console.log(element);
+
+   
+
+
+</script>
+
+</html>
+// console.log(document);

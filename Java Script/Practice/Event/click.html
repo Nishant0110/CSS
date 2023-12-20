@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="sec-1" id="sec-main">
+        <div id="div-1">
+            <h2 name="name1">ffsd</h2>
+            <h1 class="head" id="heading"> Welcome </h1>
+            <p class="pre1" id="pre1">Lorem ipsum dolor sit amet.</p>
+            <p class="pre2" id="pre2">Lorem ipsum dolor sit amet.</p>
+            <p class="pre" id="pre3">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <input type="text" class="input" id="input-fld">
+        <button id="btn" onclick="btn()">Single Click</button>
+        <button id="btn2" ondblclick="btn2()">Double Click</button>
+    </section>
+    <script>
+        let element = document.getElementById("pre1");
+        function btn() {
+            console.log("btn")
+            element.innerHTML = "<h1>single click event performed</h1>"
+            element.style.backgroundColor = "pink"
+        } console.log(document);
+
+        let element2 = document.getElementById("pre2");
+        function btn2() {
+            console.log("btn2")
+            element2.innerHTML = "<span>double click event performed</span>"
+
+
+        }
+
+        let element3 = document.getElementById("sec-main")
+        function btn() {
+            console.log("btn")
+            element3.style.backgroundColor = "yellow"
+        }
+
+    </script>
+</body>
+
+</html>
