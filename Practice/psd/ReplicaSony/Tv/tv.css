@@ -53,6 +53,8 @@
 .navbar {
     /* height: 10vh; */
     width: 100vw;
+    position: sticky;
+    top: 0%;
 
 }
 
@@ -87,13 +89,17 @@
     margin-left: 1em;
 }
 .part2{
-    position: fixed;
-    z-index: 1;
+    
+    /* left: auto; */
+    background-color: blue;
+    /* z-index: 1; */
 }
 /* ---------------------------- */
 .titlerow1 {
     align-items: center;
+    
     text-align: center;
+   
 }
 
 .titlerow1 h1 {
