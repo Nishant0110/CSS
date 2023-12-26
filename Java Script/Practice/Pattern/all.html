@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for(let row=0;row<10;row++){
+        //     for(let col=0;col<10;col++){
+        //         document.write("*");
+        //     }document.write("<br>");
+        // }
+        //pattern
+        /*        for (let row = 1; row <= 10; row++) {
+                    for (let col = 1; col <= row; col++) {
+                        document.write("*");
+                    } document.write("<br>");
+                }
+        
+                for (let row = 10; row >= 0; row--) {
+                    for (let col = 1; col < row; col++) {
+                        document.write("*");
+                    } document.write("<br>");
+                }
+        */
+        //abcd
+        let n = 5; // you can take input from prompt or change the value
+        let string = "";
+        // External loop
+        for (let i = 1; i <= n; i++) {
+            // printing characters
+            for (let j = 0; j < i; j++) {
+                string += String.fromCharCode(j + 65);
+            }
+            string += "\n";
+        }
+        console.log(string);
+    </script>
+</body>
+
+</html>
