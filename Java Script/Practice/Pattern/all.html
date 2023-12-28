@@ -28,7 +28,7 @@
                 }
         */
         //abcd
-        let n = 5; // you can take input from prompt or change the value
+        let n = prompt("Enter value")
         let string = "";
         // External loop
         for (let i = 1; i <= n; i++) {
@@ -36,9 +36,9 @@
             for (let j = 0; j < i; j++) {
                 string += String.fromCharCode(j + 65);
             }
-            string += "\n";
+            string += "<br>";
         }
-        console.log(string);
+        document.write(string);
     </script>
 </body>
 

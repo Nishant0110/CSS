@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <p>hello</p>
+    <button class="btn1">Click Here</button>
+    <script>
+        // let abc=document.querySelector("button");
+        // abc.onclick=(()=> {
+        //     console.log(abc);
+        // });
+
+        //Background Color
+        // let abc = document.querySelector("button")
+        // abc.onclick = (() => {
+        //     abc.style.backgroundColor ="black";
+        // });
+
+        //body background color
+        // let body1 = document.querySelector("#body");
+        // let abc = document.querySelector(".btn1");
+        // // let xyz="white"
+        // abc.onclick=(() => {
+        //     body1.style.backgroundColor = "black";
+        // });
+
+        let body1 = document.querySelector("#body");
+        let button1 = document.querySelector(".btn1");
+        let clr = "white";
+        button1.addEventListener("click", () => {
+            if (clr === "white") {
+                clr = "black";
+            }
+            else {
+                clr = "white";
+            }
+            body1.style.backgroundColor = clr;
+        });
+    </script>
+</body>
+
+</html>
