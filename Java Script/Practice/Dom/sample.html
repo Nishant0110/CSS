@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+        .newp1{
+            background-color:pink;
+        }
+        .p1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <ul>Fruits
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Cherry</li>
+        </ul>
+    </div>
+    <p class="p1">Hello</p>
+    <script>
+        // let diva = document.querySelector("div");
+        // diva.style.fontSize = "30 px";
+        // diva.style.backgroundColor = "purple";
+        // diva.style.textAlign = "center";
+        // // diva.style.visibility="hidden";
+        // let btn1 = document.createElement("button");
+        // btn1.innerText = "Click";
+        // console.log(btn1);
+        // diva.append(btn1)//insert in to end
+        // diva.prepend(btn1)//insert in start
+        // diva.before(btn1)//insert before selected node
+        // diva.after(btn1)//select after selected node
+        // let newheading = document.createElement("h1")
+        // newheading.innerText = "<i>New Heading</i>"
+        // document.querySelector("body").prepend("newheading")
+
+        let para = document.querySelector("p");
+        para.classList.add("newp1")
+
+    </script>
+</body>
+
+</html>
