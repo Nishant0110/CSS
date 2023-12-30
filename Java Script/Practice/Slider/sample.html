@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img {
+            width: 35%;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Slider">
+        <img class="slider-image" src="./image/1.jpg" alt="">
+        <img class="slider-image" src="./image/2.jpg" alt="">
+        <img class="slider-image" src="./image/3.jpg" alt="">
+        <img class="slider-image" src="./image/4.jpg" alt="">
+    </div>
+    <script>
+        let sliders = document.querySelectorAll(".slider-image")
+        console.log(sliders)
+        let count = 0
+        function nishant() {
+
+            for (let index = 0; index < sliders.length; index++) {
+                sliders[index].style.display = "none"
+            }
+            if (count >= sliders.length) {
+                count = 0
+            }
+            sliders[count].style.display = "block"
+            count++
+            console.log(count);
+            setTimeout(nishant, 2000)
+        } nishant()
+    </script>
+</body>
+
+</html>
