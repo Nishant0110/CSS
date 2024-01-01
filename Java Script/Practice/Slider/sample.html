@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .img {
+        .slider-image {
             width: 35%;
         }
 
         img {
             width: 100%;
         }
+
+        .slider-image {
+            animation: animation-A 2s infinite;
+        }
+
+        @keyframes animation-A {
+            0% {
+                /* transform: scale(0.5); */
+            }
+        }
+
     </style>
 </head>
 
@@ -23,6 +34,7 @@
         <img class="slider-image" src="./image/3.jpg" alt="">
         <img class="slider-image" src="./image/4.jpg" alt="">
     </div>
+
     <script>
         let sliders = document.querySelectorAll(".slider-image")
         console.log(sliders)
