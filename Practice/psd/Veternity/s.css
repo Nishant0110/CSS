@@ -68,6 +68,7 @@ nav .text ul li a {
     font-size: 1.8em;
     color: white;
 }
+
 .searchbar input {
     padding: 0.8em 1.2em;
     background-color: #fcc302;
@@ -86,9 +87,11 @@ nav .text ul li a {
     padding: 1.05em;
     margin-left: -4px;
 }
-.searchbar a{
+
+.searchbar a {
     font-size: 1em;
 }
+
 /* -------------------sec-1---------- */
 .bgyellow {
     background-color: #fcc302;
@@ -289,11 +292,26 @@ nav .text ul li a {
     background: linear-gradient(rgb(234, 174, 0, 0.9), rgb(234, 174, 0, 0.9)), url(./img/sec7bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-
+    padding: 6.25em 0;
 }
 
-.sec7main {
+.sec7 .col30 {
     text-align: center;
+}
+
+.sec7 .col30 .imgs9 {
+    width: 6.37em;
+    margin: 0 auto;
+}
+
+.sec7 h4 {
+    font-size: 2.62em;
+    color: white;
+}
+
+.sec7 p {
+    font-size: 2.37em;
+    color: white;
 }
 
 /* ------------------sec-8----------------------- */
@@ -343,25 +361,52 @@ nav .text ul li a {
 .sec8 .col30 {
     text-align: left;
 }
-.sec8 a{
+
+.sec8 a {
     font-size: 1.31em;
     color: #00D3DB;
 }
+
 /* -------------------sec-9--------------- */
-.sec9{
-    background-color:#303130;
+.sec9 {
+    background-color: #303130;
     padding: 6em 0;
 }
-.sec9main .col h3{
-    color:white;
+
+.sec9main .col h3 {
+    color: white;
     font-size: 2.37em;
 }
-.sec9main .col a{
-    color:white;
+
+.sec9main .col a {
+    color: white;
     display: block;
     font-size: 1.56em;
 }
-/* .sec9main .searchbar a{
-display: block;
-} */
 
+.sec9 .col p {
+    color: white;
+    font-size: 1.3em;
+}
+
+.textalignright {
+    text-align: right;
+}
+
+.sec9 .searchbar {
+    justify-content: end;
+    margin: 1.5em 0;
+}
+
+.sec9 .logo a {
+    display: inline-block;
+}
+
+.sec9 .logo i {
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.2em;
+    margin: 0.1em;
+    color: gray;
+    font-size: 1.3em;
+}
