@@ -19,6 +19,20 @@
                     <a href="#" class="a" data-target="one">What is JavaScript?</a>
                     <a href="#" class="b" data-target="two">isNaN function</a>
                     <a href="#" class="c" data-target="three">Negative Infinity</a>
+                    <a href="#" class="d" data-target="three">Developed By</a>
+                    <a href="#" class="e" data-target="three">Variables</a>
+                    <a href="#" class="f" data-target="three">Create Element</a>
+                    <a href="#" class="g" data-target="three">View/Session State</a>
+                    <a href="#" class="h" data-target="three">Strict Equality Operator</a>
+                    <a href="#" class="i" data-target="three">Modify In Element</a>
+                    <a href="#" class="j" data-target="three">Read & Write File</a>
+                    <a href="#" class="k" data-target="three">Loop</a>
+                    <a href="#" class="l" data-target="three">String To Intiger</a>
+                    <a href="#" class="m" data-target="three">Delete Operator</a>
+                    <a href="#" class="n" data-target="three">PopUp Box</a>
+                    <a href="#" class="o" data-target="three">Void(0)</a>
+                    <a href="#" class="p" data-target="three">Forced to load Another Page</a>
+                    <a href="#" class="q" data-target="three">InnerHtml Disadvantage</a>
                 </div>
                 <div class="col-80">
                     <h2>Module-4 (JAVASCRIPT BASIC & DOM) Assignment</h2>
@@ -27,9 +41,11 @@
                             <h3>What is JavaScript?</h3>
                         </div>
                         <div class="ans">
-                            <p>&#8680; Java Script is Client Side Scripting language ,Like Other Programming Language but Not Directly Connect DB</p>
+                            <p>&#8680; Java Script is Client Side Scripting language ,Like Other Programming Language
+                                but Not Directly Connect DB</p>
                             <p>&#8680; Java Script used for Making website Dynamic and Alive</p>
-                            <p>&#8680; we can do some baisc operation like Arithmetic,Logical,Comprision,Relational,Tarnery</p>
+                            <p>&#8680; we can do some baisc operation like
+                                Arithmetic,Logical,Comprision,Relational,Tarnery</p>
                             <p> &#8680; Script is executed on events like click blur focus keyup keypress keydow mousein
                                 mouseout</p>
                             <p>&#8680; Mordern JS Ecmascript</p>
@@ -59,7 +75,8 @@
                             <p>console.log(isNaN(value1)); // Output: false, as 10 is a number</p>
                             <p> console.log(isNaN(value2)); // Output: true, as "Hi" is not a number</p>
                             <p>console.log(isNaN(value3)); // Output: true, as NaN is not a valid number</p>
-                            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/ Global_Objects/isNaN">Read More...</a></p>
+                            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/ Global_Objects/isNaN">Read
+                                    More...</a></p>
                         </div>
                     </main>
                     <main class="que-3 dis">
@@ -74,11 +91,367 @@
                             <p class="example">Example:-</p>
                             <p>let negativeInfinity = Number.NEGATIVE_INFINITY;</p>
                             <p>console.log(negativeInfinity); // Outputs: -Infinity</p>
-                            <p>let value3 = NaN;</p>
-                            <p>console.log(isNaN(value1)); // Output: false, as 10 is a number</p>
-                            <p> console.log(isNaN(value2)); // Output: true, as "Hi" is not a number</p>
-                            <p>console.log(isNaN(value3)); // Output: true, as NaN is not a valid number</p>
-                            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/ Global_Objects/isNaN">Read More...</a></p>
+                            <p><a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/NEGATIVE_INFINITY">Read
+                                    More...</a></p>
+                        </div>
+                    </main>
+                    <main class="que-4 dis">
+                        <div class="que">
+                            <h3>Which company developed JavaScript?</h3>
+                        </div>
+                        <div class="ans">
+                            <p>&#8680; JavaScript was developed by Netscape Communications Corporation, a company that
+                                played a significant role in the early days of the internet.</p>
+                            <p>&#8680; The language was created by Brendan Eich in 1995 while he was working at
+                                Netscape.</p>
+                            <P>&#8680; Initially, it was called "Mocha," but it was later renamed "LiveScript" and
+                                finally "JavaScript" when Netscape entered into a partnership with
+                                &nbsp;&nbsp;&nbsp;&nbsp;Sun Microsystems.</P>
+                            <P>&#8680; JavaScript has since become a widely used and essential programming language for
+                                web development, supported by all major web browsers.</P>
+                        </div>
+                    </main>
+                    <main class="que-5 dis">
+                        <div class="que">
+                            <h3>What are undeclared and undefined variables?</h3>
+                        </div>
+                        <div class="ans">
+                            <ol>
+                                <li>Undeclared Variables:</li>
+                                <ul>
+                                    <li>An undeclared variable is a variable that has been used in the code without
+                                        being declared using the var, let, or const keyword.
+                                    </li>
+                                    <li>When you try to access the value of an undeclared variable, JavaScript will
+                                        throw a
+                                        ReferenceError.</li>
+                                    <p class="example">Example:</p>
+                                    <p>console.log(undeclaredVariable);</p>
+                                </ul>
+                                <li>Undifined Variables:</li>
+                                <ul>
+                                    <li>An undefined variable is a variable that has been declared but not assigned a
+                                        value.
+                                    </li>
+                                    <li>In JavaScript, when a variable is declared but not initialized, it automatically
+                                        gets the value undefined.</li>
+                                    <p class="example">Example:</p>
+                                    <p>let undefinedVariable;</p>
+                                    <p>console.log(undefinedVariable);</p>
+                                </ul>
+                            </ol>
+                        </div>
+                    </main>
+                    <main class="que-6 dis">
+                        <div class="que">
+                            <h3>Write the code for adding new elements dynamically?</h3>
+                        </div>
+                        <div class="ans">
+                            <p>&#8680; var newElement = document.createElement('div');//Create a new element</p>
+                            <p>&#8680; newElement.textContent = 'New Element';</p>
+                            <P>&#8680; newElement.style.color = 'blue';</P>
+                            <P>&#8680; document.body.appendChild(newElement);//document.body.appendChild(newElement);
+                            </P>
+                        </div>
+                    </main>
+                    <main class="que-7 dis">
+                        <div class="que">
+                            <h3>What is the difference between ViewState and SessionState?</h3>
+                        </div>
+                        <div class="ans">
+                            <ol>
+                                <li>ViewState:</li>
+                                <ul>
+                                    <li>ViewState is a concept in ASP.NET web applications.</li>
+                                    <li>It is used to persist the state of a server control (like TextBox, DropDownList,
+                                        etc.) across postbacks.</li>
+                                    <li>ViewState stores the state on the client side, usually in a hidden field, so
+                                        that the server can retrieve it when the page is posted back.</li>
+                                    <li>It helps maintain the state of controls between round-trips to the server.</li>
+                                </ul>
+                                <li>SessionState:</li>
+                                <ul>
+                                    <li>SessionState is a broader concept that is not limited to ASP.NET but is commonly
+                                        used in web development.
+                                    </li>
+                                    <li>It involves storing user-specific data on the server side, typically in a
+                                        session object.</li>
+                                    <li>SessionState allows you to store and retrieve values that are associated with a
+                                        user's session, which is a way to track user interactions with the application
+                                        over multiple requests.</li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </main>
+                    <main class="que-8 dis">
+                        <div class="que">
+                            <h3>What is === operator?</h3>
+                        </div>
+                        <div class="ans">
+                            <p>&#8680;The === operator in JavaScript is called the strict equality operator.</p>
+                            <p>&#8680; It is used to compare two values for equality without performing any type
+                                conversion.</p>
+                            <P>&#8680; Unlike the loose equality operator ==, the strict equality operator === checks
+                                both the value and the data type of the operands.</P>
+                            <p>&#8680; If the operands are of the same type and have the same value, === returns true.
+                            </p>
+                            <p>&#8680; If the operands are of different types or have different values, === returns
+                                false.</p>
+                            <p class="example">Example:</p>
+                            <p>var x = 5;</p>
+                            <p>var y = "5"; </p>
+                            <p>console.log(x === y); // Output: false (different types)</p>
+                            <p>var x = 5;</p>
+                            <p>var y = 5; </p>
+                            <p>console.log(x === y); // Output: true (same value and type)</p>
+                        </div>
+                    </main>
+                    <main class="que-9 dis">
+                        <div class="que">
+                            <h3>How can the style/class of an element be changed?</h3>
+                        </div>
+                        <div class="ans">
+                            <p>&#8680;var element = document.getElementById('elementId');// Assuming 'elementId' is the
+                                ID of the HTML element</p>
+                            <p>&#8680; var element = document.getElementById('elementId');// Change background color</p>
+                            <P>&#8680; element.style.fontSize = '16px'; // Change font size</P>
+                            <p>&#8680; var element = document.getElementById('elementId');// Assuming 'elementId' is the
+                                ID of the HTML element</p>
+                            <p>&#8680; element.classList.add('newClass'); // Add a CSS class</p>
+                            <p>&#8680; element.classList.remove('oldClass');// Remove a CSS class </p>
+                            <p>&#8680; element.classList.remove('oldClass'); // Remove a CSS class</p>
+                            <p>&#8680; var element = document.getElementById('elementId');// Assuming 'elementId' is the
+                                ID of the HTML element</p>
+                            <p>&#8680; element.className = 'newClass';// Change the class</p>
+                        </div>
+                    </main>
+                    <main class="que-10 dis">
+                        <div class="que">
+                            <h3>How to read and write a file using JavaScript?</h3>
+                        </div>
+                        <div class="ans">
+                            <p>The read and write operations in a file can be done by using some commands.</p>
+                            <p>But the module which is required to perform these operations is to be imported. The
+                                required module is 'fs' which is called as File System module in JavaScript.</p>
+                            <ol>
+                                <li>Reading from the file</li>
+                                <ul>
+                                    <li>After the File System module is imported, the reading of the file in JavaScript
+                                        can be done by using the readFile() function.
+                                    </li>
+                                    <p class="example">Syntex:</p>
+                                    <p>readFile(path, format, callBackFunc)</p>
+                                </ul>
+                                <li>Write operation on a file</li>
+                                <ul>
+                                    <li>After the File System file is imported then, the writeFile() operation is
+                                        called.
+                                    </li>
+                                    <li>The writeFile() method is used to write into the file in JavaScript.</li>
+                                    <p class="example">Syntex:</p>
+                                    <p>writeFile(path,inputData,callBackFunction)</p>
+                                </ul>
+                            </ol>
+                            <p><a href="https://www.tutorialspoint.com/how-to-read-and-write-a-file-using-javascript">Read
+                                    More...</a></p>
+                        </div>
+                    </main>
+                    <main class="que-11 dis">
+                        <div class="que">
+                            <h3>What are all the looping structures in JavaScript?</h3>
+                        </div>
+                        <div class="ans">
+                            <p>JavaScript provides several looping structures that allow you to repeatedly execute a
+                                block of code.</p>
+                            <p>The main types of loops in JavaScript are:</p>
+                            <ol>
+                                <li>for Loop:</li>
+                                <ul>
+                                    <li>The for loop is commonly used for iterating over a range of values.</li>
+                                    <p class="example">Syntex:</p>
+                                    <p>for (let i = 0; i<5; i++) { </p>
+                                            <p>console.log(i);</p>
+                                            <p>}</p>
+                                </ul>
+                                <li>while Loop:</li>
+                                <ul>
+                                    <li>The while loop continues executing a block of code as long as a specified
+                                        condition is true.</li>
+                                    <p class="example">Syntex:</p>
+                                    <p>let i=0;</p>
+                                    <p>while(i<5){< /p>
+                                            <p>console.log(i);</p>
+                                            <p>i++;</p>
+                                            <p>}</p>
+                                </ul>
+                                <li>do while Loop:</li>
+                                <ul>
+                                    <li>The do...while loop is similar to the while loop, but it guarantees that the
+                                        block of code is executed at least once, as the condition is checked after the
+                                        loop body.</li>
+                                    <p class="example">Syntex:</p>
+                                    <p>let i=0;</p>
+                                    <p>do{</p>
+                                    <p>console.log(i);</p>
+                                    <p>i++;</p>
+                                    <p>}</p>
+                                    <p>while(i<5);< /p>
+                                </ul>
+                                <li>for...in Loop:</li>
+                                <ul>
+                                    <li>The for...in loop is used for iterating over the properties of an object. It
+                                        iterates over the enumerable properties of an object, including inherited ones.
+                                    </li>
+                                    <p class="example">Syntex:</p>
+                                    <p>const obj = { a: 1, b: 2, c: 3 };</p>
+                                    <p>for (let prop in obj) {</p>
+                                    <p>console.log(prop, obj[prop]);</p>
+                                    <p>}</p>
+                                </ul>
+                                <li>for...of Loop:</li>
+                                <ul>
+                                    <li>The for...of loop is introduced in ECMAScript 6 (ES6) and is used for iterating
+                                        over iterable objects like arrays and strings.</li>
+                                    <p class="example">Syntex:</p>
+                                    <p>const arr = [1, 2, 3];</p>
+                                    <p>for (let element of arr) {</p>
+                                    <p>console.log(element);</p>
+                                    <p>}</p>
+                                </ul>
+                                <li>forEach Method:</li>
+                                <ul>
+                                    <li>The forEach method is a higher-order function available for arrays in
+                                        JavaScript.It executes a provided function once for each array element.</li>
+                                    <p class="example">Syntex:</p>
+                                    <p>const arr = [1, 2, 3];</p>
+                                    <p>arr.forEach(element => {</p>
+                                    <p>console.log(element);</p>
+                                    <p>});</p>
+                                </ul>
+                            </ol>
+                        </div>
+                    </main>
+                    <main class="que-12 dis">
+                        <div class="que">
+                            <h3>How can you convert the string of any base to an integer in JavaScript?</h3>
+                        </div>
+                        <div class="ans">
+                            <p>&#8680; In JavaScript, you can convert a string representing a number in any base
+                                (binary, octal, hexadecimal, etc.) to an integer using the parseInt function. </p>
+                            <p>&#8680; The parseInt function takes two parameters: the string to be converted and the
+                                base of the numeral system.</p>
+                            <p class="example">Example:-</p>
+                            <p>var A = "11";</p>
+                            <p>var res = parseInt(A, 2);</p>
+                            <p>console.log(res); // Outputs: 3</p>
+                        </div>
+                    </main>
+                    <main class="que-13 dis">
+                        <div class="que">
+                            <h3>What is the function of the delete operator?</h3>
+                        </div>
+                        <div class="ans">
+                            <p>The delete operator in JavaScript is used to remove a property from an object or to
+                                delete an element from an array.</p>
+                            <p>It can also be used to delete a variable if it is declared using var, let, or const.</p>
+                            <p>The behavior of the delete operator depends on what you are trying to delete:</p>
+                            <ol>
+                                <li>Deleting Object Properties:</li>
+                                <ul>
+                                    <li>When used to delete an object property, the delete operator removes that
+                                        property from the object.</li>
+                                    <p class="example">Example:</p>
+                                    <p>var obj = { name: 'John', age: 30 };</p>
+                                    <p>delete obj.age;</p>
+                                    <p>console.log(obj); // Outputs: { name: 'John' }</p>
+                                </ul>
+                                <li>Deleting Array Elements:</li>
+                                <ul>
+                                    <li>When used with an array, the delete operator removes the element at a specified
+                                        index, but it leaves an empty slot.</li>
+                                    <p class="example">Example:</p>
+                                    <p>var arr = [1, 2, 3];</p>
+                                    <p>delete arr[1];</p>
+                                    <p>console.log(arr); // Outputs: [1, undefined, 3]</p>
+                                </ul>
+                                <li>Deleting Variables:</li>
+                                <ul>
+                                    <li>If used to delete a variable declared with var, let, or const, it will make the
+                                        variable undefined.li>
+                                        <p class="example">Example:</p>
+                                        <p>var myVariable = 42;</p>
+                                        <p>delete myVariable;</p>
+                                        <p>console.log(myVariable); // Outputs: undefined</p>
+                                    </li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </main>
+                    <main class="que-14 dis">
+                        <div class="que">
+                            <h3>What are all the types of Pop up boxes available in JavaScript?</h3>
+                        </div>
+                        <div class="ans">
+                            <p>
+                                In JavaScript, there are three types of pop-up boxes commonly used for user interaction:
+                            </p>
+                            <ol>
+                                <li>alert:</li>
+                                <ul>
+                                    <li>Displays a simple message to the user in a pop-up box.</li>
+                                    <li>Contains an "OK" button for the user to acknowledge the message.
+                                        javascript
+                                    </li>
+                                    <p class="example">Example:</p>
+                                    <p>alert("This is an alert message!");</p>
+                                </ul>
+                                <li>confirm:</li>
+                                <ul>
+                                    <li>Prompts the user with a message and provides two buttons: "OK" and "Cancel."
+                                    </li>
+                                    <li>Prompts the user with a message and provides two buttons: "OK" and "Cancel."
+                                    </li>
+                                    <p class="example">Example:</p>
+                                    <p>let result = confirm("Do you want to proceed?");</p>
+                                    <p>if (result) {</p>
+                                    <p>console.log("User clicked OK");</p>
+                                    <p>} else {</p>
+                                    <p> console.log("User clicked Cancel");</p>
+                                    <p>}</p>
+                                </ul>
+                                <li>prompt:</li>
+                                <ul>
+                                    <li>Prompts the user to enter input in a pop-up box with a message, an input field,
+                                        and "OK" and "Cancel" buttons.</li>
+                                    <li>Returns the entered value if the user clicks "OK" and null if the user clicks
+                                        "Cancel."</li>
+                                    <p class="example">Example:</p>
+                                    <p>let userInput = prompt("Please enter your name:", "John Doe");</p>
+                                    <p>if (userInput !== null) {</p>
+                                    <p>console.log("User entered: " + userInput);</p>
+                                    <p>} else {</p>
+                                    <p>console.log("User clicked Cancel");</p>
+                                    <p>}</p>
+                                    </li>
+                                </ul>
+                            </ol>
+                        </div>
+                    </main>
+                    <main class="que-15 dis">
+                        <div class="que">
+                            <h3>What is the use of Void (0)?</h3>
+                        </div>
+                        <div class="ans">
+                            <p>&#8680; The use of void(0) in JavaScript is often associated with using it as a way to
+                                create an undefined value. </p>
+                            <p>&#8680; The void operator in JavaScript takes an expression as an operand and evaluates
+                                it but then returns undefined.</p>
+                            <p>The most common use of void(0) is in the context of creating an undefined value in a
+                                URL's href attribute to prevent the browser from navigating to a new page when a link is
+                                clicked.</p>
+                            <p class="example">Example:-</p>
+                            <!--<p><a href="javascript:void(0);" onclick="myFunction()">Click me</a></p>-->
                         </div>
                     </main>
                 </div>

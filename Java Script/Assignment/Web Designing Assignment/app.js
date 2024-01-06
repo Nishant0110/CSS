@@ -40,4 +40,8 @@ aElements.forEach(a => {
         targetQuestion.style.display = "block";
     }
 });
+let a="11";
+let total=parseInt(a,2)
+console.log(total);
+
 

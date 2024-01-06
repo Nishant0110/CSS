@@ -24,7 +24,7 @@ a {
 .col-80 {
     width: 80%;
     background: linear-gradient(#b1a9e2, #1f7186);
-    height: 99vh;
+    /* height: 99vh; */
 }
 
 .dis {
@@ -73,4 +73,24 @@ p {
 
 .example {
     color: white;
+}
+
+.que-5 ol,
+.que-7 ol,
+.que-10 ol,
+.que-11 ol,
+.que-14 ol {
+    margin: 0.5rem 0 0 2.2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.que-5 ol ul li,
+.que-7 ol ul li,
+.que-10 ol ul li,
+.que-11 ol ul li,
+.que-14 ol ul li {
+    font-weight: 450;
+    font-size: 1.2rem;
+    line-height: 30px;
 }
