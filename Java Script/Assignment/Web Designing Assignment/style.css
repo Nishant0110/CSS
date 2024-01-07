@@ -40,7 +40,7 @@ a {
 }
 
 .col-80 {
-    width: 80%;
+    width: 100%;
     background: linear-gradient(#077ab8, #02c1e7);
     height: 100vh;
     overflow: scroll;
