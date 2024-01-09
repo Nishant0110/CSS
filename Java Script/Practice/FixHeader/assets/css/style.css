@@ -1,0 +1,273 @@
+/* Common CSS START */
+
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/Manrope-VariableFont_wght.ttf);
+}
+
+:root {
+    --text-primary-color: rgb(4, 5, 52);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-primary {
+    color: var(--text-primary-color);
+}
+
+.px-4 {
+    padding: 0 3rem;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.ml-a {
+    margin-left: auto;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
+
+.container {
+    /* border: 1px solid; */
+    /* padding: 0 3rem; */
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    max-width: 1240px;
+    /* margin: 0 auto; */
+    /* padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5); */
+    padding: 0 12px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    /* 12px * .5 */
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    /* margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x)); */
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+div[class*="col"] {
+    /* padding-top: 0.75rem;
+    padding-bottom: 0.75rem; */
+    flex: 1 0 0%;
+    width: 100%;
+    max-width: 100%;
+    /* padding: .75rem 12px; */
+    padding: 0 12px;
+    /* margin-top: .5rem; */
+    /* padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5); */
+    /* margin-top: var(--bs-gutter-y); */
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.position-abs {
+    position: absolute;
+}
+
+.position-rel {
+    position: relative;
+}
+
+.img-auto {
+    width: auto;
+}
+
+/* Common CSS END */
+
+
+
+/* Header CSS START */
+
+
+.fixedmenu{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    background-color: #f4f3f8;
+}
+.menu li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.header-top {
+    color: white;
+    background-color: #007CC3;
+    /* height: 45px; */
+    line-height: 40px;
+}
+
+.help>li+li {
+    position: relative;
+}
+
+.help>li+li::before {
+    content: " ";
+    height: 20px;
+    width: 1px;
+    top: 10px;
+    left: 0;
+    background-color: white;
+    position: absolute;
+    /* border-left: 1px solid; */
+}
+
+.nav-item a {
+    padding: 8px 22px;
+}
+
+.main-menu nav {
+    margin: 0 20px;
+}
+
+.active {
+    background-color: #007CC3;
+    color: white;
+    border-radius: 25px;
+}
+
+.nav-item a:hover {
+    background-color: #007CC3;
+    color: white;
+    border-radius: 25px;
+}
+
+/* Header CSS END */
+
+
+/* Marketr leading visa START */
+#market-leading-visa {
+    background-color: #f4f3f8;
+}
+
+.market-leading-visa-top-img {
+    width: 38%;
+    display: block;
+    margin: 0 auto;
+    left: 34%;
+
+}
+
+.leading-row {
+    padding: 5rem 2rem;
+}
+
+.img-leading-1 {
+    width: 90%;
+}
+
+.img-leading-2 {
+    width: 90%;
+    margin-top: 10px;
+}
+
+.img-leading-3 {
+    width: 100%;
+}
+
+.img-p {
+    position: absolute;
+    left: -21px;
+    width: 150px;
+    bottom: 85px;
+    transform: rotate(8deg);
+}
+
+/* Marketr leading visa END */
+
+/* About us section START */
+.about {
+    margin-left: 6rem;
+    padding-left: 6rem;
+}
+
+.visa-about {
+    right: -5rem;
+    width: 30%;
+    bottom: 0;
+}
+
+.about-call {
+    margin-top: auto;
+}
+
+.about h3 {
+    color: #007CC3;
+    font-family: Marmelad;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 55.2px;
+    letter-spacing: -1.84px;
+
+}
+
+/* About us section END */
+
+/* Category START */
+.cate-title {
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    /* left: 25%; */
+    background-color: rgba(255, 255, 255, 0.455);
+    width: 100%;
+}
+.hoverme{
+    overflow: hidden;
+}
+.on-hover{
+    /* display: none; */
+    bottom: -7rem;
+}
+.hoverme:hover .on-hover{
+    animation: slideup .2s ease-in forwards;
+}
+@keyframes  slideup {
+    0%{ bottom: -7rem; }
+    100%{ bottom: 1rem; }
+    /* from{}
+    to{  } */
+}
+/* Category END */
