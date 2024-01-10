@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+/* background-color:#68BBE3 ;
+ */
+ background: linear-gradient(45deg, #393d3f,#d5bbb1,#9cc4b2,#c98ca7,#e76d83 );
+ height: 700px;
+ /* text-align: center; */
+}
+.main{
+    width: 500px;
+    margin: 0 auto;
+}
+h1{
+text-align: center;
+}
+.row{
+    margin: 1em;
+}
+input{
+    width: 100%;
+    padding: 0.8em 5em;
+    border-radius: 0.5em;
+    background-color: #d5bbb1;
+}
+button{
+    padding: 0.8em 5em;
+    border-radius: 0.5em;
+    background-color:#9cc4b2;
+}
