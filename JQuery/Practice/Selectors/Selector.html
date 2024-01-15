@@ -30,11 +30,28 @@
                  confirm("Are You Sure");
              })
          });*/
-        $(document).ready(function () {
+
+         //clickevent 
+
+       /* $(document).ready(function () {
             $('button').click(function () {
                 $('.mydiv').toggle(2000);
             });
-        });
+        });*/
+
+        //dblclickevent
+        /* $(document).ready(function(){
+            $('button').dblclick(function(){
+                $('.mydiv').toggle(1000)
+            });
+        });*/
+        
+        //mouse enter event
+        $(document).ready(function(){
+            $('button').mouseenter(function(){
+                $('.mydiv').toggle()
+            })
+        })
     </script>
 </body>
 
