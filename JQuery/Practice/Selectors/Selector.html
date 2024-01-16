@@ -20,24 +20,27 @@
 
     <button>Click Here</button>
     <div class="mydiv">
-    Welcome to toggle
+        Welcome to toggle
     </div>
     <p>Lorem ipsum dolor sit amet.</p>
+    <input type="text" name="" id="input1">
+    <span class="span1">focus is accured</span>
+    <span class="span2">blur is accured</span>
     <script>
-        /* $(document).ready(function () { 
+        /* $(document).ready(function () {
              $("button").click(function(){
                  alert("Hello");
                  confirm("Are You Sure");
              })
          });*/
 
-         //clickevent 
+        //clickevent
 
-       /* $(document).ready(function () {
-            $('button').click(function () {
-                $('.mydiv').toggle(2000);
-            });
-        });*/
+        /* $(document).ready(function () {
+             $('button').click(function () {
+                 $('.mydiv').toggle(2000);
+             });
+         });*/
 
         //dblclickevent
         /* $(document).ready(function(){
@@ -45,13 +48,56 @@
                 $('.mydiv').toggle(1000)
             });
         });*/
-        
+
         //mouse enter event
-        $(document).ready(function(){
-            $('button').mouseenter(function(){
-                $('.mydiv').toggle()
-            })
-        })
+        /* $(document).ready(function(){
+             $('button').mouseenter(function(){
+                 $('.mydiv').toggle()
+             })
+         })*/
+
+        //mouseleave event
+        /* $(document).ready(function () {
+             $('button').mouseleave(function () {
+                 $('.mydiv').width(100).toggle(1000)
+                 // $('.mydiv').toggle()
+             })
+         })*/
+
+        //KeyBoard Event
+        /* $(document).ready(function () {
+             // $('#input1').keydown(function () {
+             // $('#input1').keyup(function () {
+             $('#input1').keypress(function () {
+                 alert("This is keyboard enent")
+                 console.log("keyboard event");
+             });
+         });*/
+
+        //jQuery Effects
+        /* $('span').hide();
+         $('input').focus(function () {
+             $('.span1').show().fadeOut(2000);//effects
+         });
+         $('#input1').blur(function () {
+             $('.span2').show().fadeOut(2000);
+         });*/
+
+        //multiple events
+        $(document).ready(function () {
+            $('p').on({
+                mouseenter: function () {
+                    $(this).css('backgroundColor', 'red');
+                },
+                mouseleave: function () {
+                    $(this).css('backgroundColor', 'yellow');
+                },
+                click: function () {
+                    $(this).css('color', 'blue')
+                }
+            });
+        });
+
     </script>
 </body>
 
