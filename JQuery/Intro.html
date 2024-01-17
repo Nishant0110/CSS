@@ -48,19 +48,103 @@
         <span>$(document).action(function(){
             $(selector)
             });</span>
-            <p>A jQuery selector starts with a dollar sign $ and then we put a selector inside the braces ().</p>
-            <p>Here $() is called factory function, which makes use of following three building blocks while selecting elements in a given document:Element,id,class.</p>
+        <p>A jQuery selector starts with a dollar sign $ and then we put a selector inside the braces ().</p>
+        <p>Here $() is called factory function, which makes use of following three building blocks while selecting
+            elements in a given document:Element,id,class.</p>
     </ul>
 
-
-
-
-
-
-
-
-
-    <script src="./app.js"></script>
+    <h2>Event Methods</h2>
+    <p>jQuery events are the actions that can be detected by your web application.</p>
+    <p>They are used to create dynamic web pages.</p>
+    <p>An event shows the exact moment when something happens.</p>
+    <p>These are some examples of events.</p>
+    <ul>
+        <li>Mouse Events</li>
+        <ul>
+            <li>
+                <p>The click() method attaches an event handler function to an HTML element.</p>
+            </li>
+            <li>
+                <p>The dblclick() method attaches an event handler function to an HTML element.</p>
+            </li>
+            <li>
+                <p>The mouseenter() method attaches an event handler function to an HTML element.</p>
+            </li>
+            <li>
+                <p>The mouseleave() method attaches an event handler function to an HTML element.</p>
+                <p>The function is executed when the user clicks on the HTML element.</p>
+                <p class="syntex">Syntex:</p>
+                <span>$("selector").click();</span>
+            </li>
+        </ul>
+        <li>Keyboard Events</li>
+        <!-- <ul>
+            <li>
+                <p></p>
+            </li>
+            <li>
+                <p></p>
+            </li>
+            <li>
+                <p></p>
+            </li>
+            <li>
+                <p class="syntex">Syntex:</p>
+                <span></span>
+            </li>
+        </ul> -->
+        <ul>
+            <li>
+                <p>Keypress() event specifies that the key is pressed down.</p>
+            </li>
+            <li>
+                <p>Keyup() event specifies that the key is released.</p>
+            </li>
+            <li>
+                <p>Keydown() event handler to the “keydown” event, or trigger that event on an element.</p>
+            </li>
+            <li>
+                <p class="syntex">Syntex:</p>
+                <span>$(selector).keydown(function) </span>
+            </li>
+        </ul>
+        <li>Form Events</li>
+        <ul>
+            <li>
+                <p>The focus() method attaches an event handler function to an HTML form field.</p>
+            </li>
+            <li>
+                <p>The blur() method attaches an event handler function to an HTML form field.</p>
+            </li>
+            <li>
+                <p>The submit() event handler to the “submit” event, or trigger that event on an element.</p>
+            </li>
+            <li>
+                <p class="syntex">Syntex:</p>
+                <span>$(selector).blur(function)</span>
+            </li>
+        </ul>
+        <li>Document/Window Events</li>
+        <ul>
+            <li>
+                <p>load() Bind an event handler to the “load” event, or trigger that event on an element.</p>
+            </li>
+            <li>
+                <p>unload() method is used to unload a specific element. It attaches an event handler to unload event. </p>
+            </li>
+            <li>
+                <p>The scroll() method is used to trigger the scroll event or attach a function to run when scrolling occurs.</p>
+            </li>
+            <li>
+                <p>resize() method triggers a resize event when the size of the browser window changes. It binds the event handler to resize an event or trigger that event on an element.</p>
+            </li>
+            <li>
+                <p class="syntex">Syntex:</p>
+                <span>$(selector).unload(function) </span>
+            </li>
+        </ul>
+        <script src="./app.js"></script>
+    </ul>
 </body>
 
 </html>

@@ -1,0 +1,29 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 28 Dec 2023 13:26:02 at https://themegenix.com/demo/skillgro/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://themegenix.com/demo/skillgro/index.html -O1 "C:\My Web Sites\edu3" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+13:28:58	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/course.html (from https://themegenix.com/demo/skillgro/index.html)
+13:28:58	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/instructor-datails.html (from https://themegenix.com/demo/skillgro/index.html)
+13:29:07	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/assets/img/icons/down_arrow.svg (from https://themegenix.com/demo/skillgro/assets/css/main.css)
+13:29:07	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/assets/img/bg/cta_bg.png (from https://themegenix.com/demo/skillgro/assets/css/main.css)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/forgot-pass.html (from https://themegenix.com/demo/skillgro/login.html)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/Version/ (from https://themegenix.com/demo/skillgro/assets/js/tween-max.min.js)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/e (from https://themegenix.com/demo/skillgro/assets/js/swiper-bundle.min.js)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/t.params.url (from https://themegenix.com/demo/skillgro/assets/js/swiper-bundle.min.js)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/src/js/index.js (from https://themegenix.com/demo/skillgro/assets/js/tg-cursor.min.js)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/node_modules/gsap/gsap-core.js (from https://themegenix.com/demo/skillgro/assets/js/tg-cursor.min.js)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/node_modules/jquery/dist/jquery.js (from https://themegenix.com/demo/skillgro/assets/js/tg-cursor.min.js)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/node_modules/gsap/index.js (from https://themegenix.com/demo/skillgro/assets/js/tg-cursor.min.js)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/src/js/cursor.js (from https://themegenix.com/demo/skillgro/assets/js/tg-cursor.min.js)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/src/js/magnetic.js (from https://themegenix.com/demo/skillgro/assets/js/tg-cursor.min.js)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/GET (from https://themegenix.com/demo/skillgro/assets/js/vivus.min.js)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/Trident/ (from https://themegenix.com/demo/skillgro/assets/js/vivus.min.js)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/Edge/ (from https://themegenix.com/demo/skillgro/assets/js/vivus.min.js)
+13:29:08	Error: 	"Not Found" (404) at link https://themegenix.com/demo/skillgro/dist/ (from https://themegenix.com/demo/skillgro/assets/js/aos.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 6 seconds : 271 links scanned, 252 files written (10417725 bytes overall) [6481468 bytes received at 34846 bytes/sec], 7405582 bytes transferred using HTTP compression in 152 files, ratio 31%, 67.7 requests per connection
+(18 errors, 0 warnings, 0 messages)
