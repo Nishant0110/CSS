@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .div1,
+        .div2 {
+            width: 90vw;
+            height: 20vh;
+            background-color: #575050;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 2em;
+            border: 5px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">Click Here 1 </div>
+    <div class="div2"></div>
+
+    <script>
+        //  $(".div1").click(function () {
+        //        $(".div2").slideUp();
+        // });
+        // $(".div1").click(function () {
+        //     $(".div2").slideDown();
+        // });
+        $(".div1").click(function () {
+            $(".div2").slideToggle(1000);
+        });
+    </script>
+</body>
+
+</html>

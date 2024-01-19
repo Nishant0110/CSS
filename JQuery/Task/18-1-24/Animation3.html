@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .div1 {
+            width: 100px;
+            height: 100px;
+            background-color: #bae08d;
+            border: 5px solid white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body> <button>Click Here</button>
+    <div class="div1"></div>
+    <script>
+        $("button").click(function () {
+            $('.div1').css({
+                'top': '50px',
+                'left': '650px'
+            }).animate({ height: "+=100px", width: "+=100px" }, 500);
+        });
+    </script>
+</body>
+
+</html>

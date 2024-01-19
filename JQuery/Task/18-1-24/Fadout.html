@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .div1 {
+            width: 10vw;
+            height: 20vh;
+            background-color: #575050;
+            border: 5px solid white;
+        }
+        .div2 {
+            width: 10vw;
+            height: 20vh;
+            background-color: #db6d6d;
+            border: 5px solid white;
+        }
+        .div3 {
+            width: 10vw;
+            height: 20vh;
+            background-color: #e8e663;
+            border: 5px solid white;
+        }
+    </style>
+</head>
+<body>
+    <button>Click Hear To FadOut</button>
+    <div class="div1">Click Here 1 </div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <script>
+        $("button").click(function () {
+            $(".div1").fadeOut(500); $(".div2").fadeOut(1000); $(".div3").fadeOut(2000);
+        });
+    </script>
+</body>
+</html>

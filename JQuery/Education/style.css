@@ -78,6 +78,7 @@ nav {
         display: inline-block;
         padding: 0 0.8rem;
         position: relative;
+        z-index: 5;
         text-decoration: none;
         /* text-align: center; */
     }
@@ -127,7 +128,9 @@ nav {
         padding-left: 10px;
         transition: all 0.50s ease-in-out;
     }
-};
+}
+
+;
 
 a {
     text-decoration: none;
@@ -218,7 +221,7 @@ nav .row .tgmenu__action i {
     &:hover {
         background-color: #FFC224;
     }
-};
+}
 
 nav .row .tgmenu__action button {
     background-color: #FFC224;
@@ -233,29 +236,50 @@ nav .row .tgmenu__action button {
         background-color: #5B53DD;
         color: white;
     }
-};
+}
 
 nav .tgmenu__action a {
     margin: 0 10px;
-};
+}
 
 /* ******************************sec-1************************* */
 
 
 .sec-1 {
-    background-image: url(./assets/banner/banner_bg.png);
-    background-size: cover;
+    background-color: #F0ECFA;
+    padding-top: 5em;
 
-};
+    .text p {
+        font-size: 4em;
+        width: 70%;
+    }
 
+    #par {
+        font-size: 2em;
+        margin: 1em 0;
+        color: gray;
+    }
 
-.learning {
-    /* clip-path: polygon(50% 0%, 50% 0, 50% 0, 100% 3%, 96% 97%, 51% 100%, 5% 96%, 0 4%, 51% 0); */
+    .btn2 {
+        padding: 1em 2em;
+        border: none;
+        border-radius: 50px;
+        background-color:  #5751e1;
+    }
+    .learning {
+        clip-path: polygon(50% 0%, 50% 0, 50% 0, 100% 3%, 96% 97%, 51% 100%, 5% 96%, 0 4%, 51% 0);
+        background-color: orange;
+    }
+    
 }
 
-p {
-    font-size: 3rem;
-}
+
+
+/* p {
+    font-size: 2rem;
+    width: 70%;
+    margin: 1em;
+} */
 
 .col-50 {
     width: 50%;
