@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <body>
+        <section>
+            <div class="row">
+                <div class="col-20">
+                    <div class="box">
+                        <a href="#" class="a" data-target="one">What is jQuery?</a>
+                        <hr>
+                        <a href="#" class="b" data-target="two">Css Using jQuery</a>
+                        <hr>
+                        <a href="#" class="c" data-target="three">Slider with Animation?
+                        </a>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-80">
+                    <h2>Module - 5 (jQuery Basic, Effects & Advanced)</h2>
+                    <main class="que-1 dis">
+                        <div class="que">
+                            <h3>What is jQuery?</h3>
+                        </div>
+                        <div class="ans">
+                            <p>&#8680;JQuery is a fast, small, and feature-rich JavaScript library.</p>
+                            <p>&#8680; jQuery is a lightweight, "write less, do more", JavaScript library.</p>
+                            <p>&#8680; Query also simplifies a lot of the complicated things from JavaScript, like DOM
+                                manipulation.</p>
+                            <p> &#8680; many lines of code written in javascript, into a method that can be called with
+                                a single line of code.</p>
+                    </main>
+                    <main class="que-2 dis">
+                        <div class="que">
+                            <h3>How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery ,
+                                jQuery Animation?
+                            </h3>
+                        </div>
+                        <div class="ans">
+                            <ol>
+                                <li>Applying CSS</li>
+                                <ul>
+                                    <li>To apply CSS styles using jQuery, you can use the css() method..
+                                    </li>
+                                    <p class="example">Syntex:</p>
+                                    <p>$(selector).css({property:value}) </p>
+                                    <p class="example">Example:</p>
+                                    <p>$("#myElement").css("color", "blue");</p>
+                                </ul>
+                                <li> Adding and removing classes</li>
+                                <ul>
+                                    <li>To add and remove classes, you can use the addClass() and removeClass() methods.
+                                    </li>
+                                    <p class="example">Syntex:</p>
+                                    <p> $('your-selector').addClass('your-class-name');</p>
+                                    <p> $('your-selector').removeClass('your-class-name');</p>
+                                    <p class="example">Example:</p>
+                                    <p> $("#myElement").addClass("highlight");</p>
+                                    <p> $("#myElement").removeClass("highlight");</p>
+                                </ul>
+                                <li>jQuery Animation</li>
+                                <ul>
+                                    <li>The jQuery animate() method provides you a way to create custom animations.</li>
+                                    <p class="example">Syntex:</p>
+                                    <p>$(selector).animate({params}, speed, callback);</p>
+                                    <p class="example">Example:</p>
+                                    <p> $( "#effect" ).animate({backgroundColor: "#aa0000",color: "#fff",width:
+                                        500},1000 ); </p>
+                                </ul>
+                            </ol>
+                        </div>
+                    </main>
+                    <main class="que-3 dis">
+                        <div class="que">
+                            <h3>How to create slider with animation?</h3>
+                        </div>
+                        <div class="ans">
+                            <p>&#8680; You can create a sliding effect on elements using jQuery method.</p>
+                            <p>&#8680; Using animation, we can change the properties of HTML elements such as background
+                                colour, changing border styles, changing navigation properties, formatting the font
+                                properties, etc.</p>
+
+                            <p class="example">Syntex:</p>
+                            <p>$("selector").animate({params}, speed, callback);</p>
+                            <p class="example">Example:</p>
+                            <P>$("#animate").click(function() {$("div").animate({width: "200px",height:
+                                "200px",borderRadius: "50%",marginLeft: "210px",marginTop: "70px",},2000,);});</P>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -15,6 +14,21 @@ a {
     color: rgb(242, 225, 225);
     font-size: 1.5rem;
 }
+.dis {
+    display: none;
+}
+.box {
+    width: 90%;
+    border-width: 15px;
+    border-style: ridge;
+    border-color: #04302b;
+    padding: 0.5em;
+    margin: 1em 1em 0 1em;
+}
+
+.box a:hover {
+    color:burlywood;
+}
 
 .row {
     display: flex;
@@ -22,32 +36,22 @@ a {
 
 .col-20 {
     width: 20%;
-    /* background-color: rgb(147, 153, 210,0.9); */
     background-color: #1ca4b6;
-
-}
-
-.col-20 a {
-    text-align: center;
-    padding: 0.35rem;
 }
 
 .col-20 hr {
     width: 95%;
     height: 0.2rem;
+    /* margin: 0 auto; */
     margin: 0 auto;
     color: rgb(246, 230, 230);
 }
 
 .col-80 {
-    width: 100%;
+    width: 80%;
     background: linear-gradient(#077ab8, #02c1e7);
     height: 100vh;
     overflow: scroll;
-}
-
-.dis {
-    display: none;
 }
 
 h2 {
@@ -74,45 +78,22 @@ h3 {
 }
 
 p {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.2rem;
     margin: 0.5rem 0;
 }
 
-.que-1 ul li {
-    margin: 0.5rem 0 0 2.2rem;
+.que-2 ol li {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 1em 0 0 1em;
+}
+
+.que-2 ul li {
     font-weight: 700;
     font-size: 1.2rem;
 }
-
-/* .que-2 .ans a {
-    color: rgb(246, 230, 230);
-    font-size: 1.3rem;
-    text-decoration: underline;
-} */
 
 .example {
     color: rgb(246, 230, 230);
-}
-
-.que-5 ol,
-.que-7 ol,
-.que-10 ol,
-.que-11 ol,
-.que-13 ol,
-.que-14 ol {
-    margin: 0.5rem 0 0 2.2rem;
-    font-weight: 700;
-    font-size: 1.2rem;
-}
-
-.que-5 ol ul li,
-.que-7 ol ul li,
-.que-10 ol ul li,
-.que-11 ol ul li,
-.que-13 ol ul li,
-.que-14 ol ul li {
-    font-weight: 450;
-    font-size: 1.2rem;
-    line-height: 30px;
 }
