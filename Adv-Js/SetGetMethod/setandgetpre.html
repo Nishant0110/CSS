@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>//create object
+        var person = {
+            name: "abc",
+            age: 25,
+            //create method
+            //    getname : function () {
+            //         return this.name.toUpperCase();
+            //     }
+
+            get getname() {
+                return this.name.toUpperCase();
+            },
+            set setname(parameter) {
+                this.name = parameter.toUpperCase();
+            }
+        };
+        // person.name = "def";//simple way to change name
+        person.setname = "def";//simple way to change name
+
+        // console.log(person.name.toUpperCase(), person.age)
+        // console.log(person.getname);//call method
+        console.log(person)
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function person(a, b, c) {
+            this.Fname = a,
+                this.Lname = b,
+                this.Age = c
+            //     this.Fullname = function () {
+            //     return this.Fname + " " + this.Lname;
+            // }
+            this.year=1992;
+
+        }
+       
+        let student1 = new person("abc", "xyz", 20);
+        student1.year=30;
+        student2 = new person("def", "zxy", 30);
+        console.log(student1, student2)
+    </script>
+</body>
+
+</html>
