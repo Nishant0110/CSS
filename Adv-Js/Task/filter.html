@@ -9,32 +9,16 @@
 
 <body>
     <script>
-        // let human = ["a", "b", "c", "a"];
-        // const res = human.filter(checkfun);
-        // function checkfun(human) {
-        //     return human == "a";
-        // }
-        // console.log(res);
-
-
-        // using aerow function
-
-
-        //
-        // Array of humans
         const humans = [
             { name: "ankit", age: 20 },
-            { name: "Bodishantb", age: 23 },
+            { name: "bipin", age: 23 },
             { name: "chetan", age: 18 },
             { name: "dinesh", age: 16 },
             { name: "jigar", age: 17 }
         ];
-        // Filter humans who are 18 years old or older and return their names
         const adults = humans.filter(human => human.age >= 18).map(human => human.name);
 
-        console.log(adults); // Output: ["Alice", "Charlie", "Eve"]
-
-
+        console.log(adults);
     </script>
 </body>
 
