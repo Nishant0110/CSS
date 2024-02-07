@@ -14,9 +14,11 @@ a {
     color: rgb(242, 225, 225);
     font-size: 1.5rem;
 }
+
 .dis {
     display: none;
 }
+
 .box {
     width: 90%;
     border-width: 15px;
@@ -27,7 +29,7 @@ a {
 }
 
 .box a:hover {
-    color:burlywood;
+    color: burlywood;
 }
 
 .row {
@@ -51,7 +53,8 @@ a {
     width: 80%;
     background: linear-gradient(#077ab8, #02c1e7);
     height: 100vh;
-    overflow: scroll;
+    /* overflow: scroll; */
+    overflow-y: scroll;
 }
 
 h2 {
@@ -77,11 +80,13 @@ h3 {
 .ans {
     padding: 0 0 0 2rem;
 }
-.phead{
+
+.phead {
     font-weight: 700;
     font-size: 1.3rem;
     margin: 0.9rem 0 0.5rem 0;
 }
+
 p {
     font-weight: 300;
     font-size: 1.2rem;
@@ -101,4 +106,29 @@ p {
 
 .example {
     color: rgb(246, 230, 230);
+}
+
+/* -----------------------Q-5--------------- */
+table,
+table th,
+table td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+.a1,
+.a2 {
+    width: 45%;
+
+    &>img {
+        width: 100%;
+    }
+}
+.a1inner{
+    width: 45%;
+    /* height: 500px; */
 }
