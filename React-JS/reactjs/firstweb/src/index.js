@@ -5,11 +5,13 @@ import App from './App';
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle"
 import reportWebVitals from './reportWebVitals';
+import Mydeatil from './Mydetail';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <Mydetail/>
   </React.StrictMode>
 );
 

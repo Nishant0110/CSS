@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './header';
 import Footer from './Footer';
+import Mydeatil from './Mydetail';
 
 function App() {
   let name = "abc";
