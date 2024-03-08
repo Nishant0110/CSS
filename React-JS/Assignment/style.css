@@ -103,29 +103,3 @@ p {
     font-weight: 600;
     color: rgb(246, 230, 230);
 }
-
-/* -----------------------Q-5--------------- */
-table,
-table th,
-table td {
-    border: 1px solid black;
-}
-
-th,
-td {
-    font-size: 1.2rem;
-    padding: 0.5rem;
-}
-
-.a1,
-.a2 {
-    width: 45%;
-
-    &>img {
-        width: 100%;
-    }
-}
-
-.a1inner {
-    width: 45%;
-}
