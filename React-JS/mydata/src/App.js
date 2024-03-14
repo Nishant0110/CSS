@@ -21,19 +21,15 @@ import { useState } from 'react'
 //     </>
 //   );
 // }
-function App(){
-  return(
-  <>
-  <button onClick={}>Increment</button>
-  <button>Decrement</button>
-  <button>Reset</button>
-  
-  </>
+function App() {
+  let [data, setdata] = useState(0)
+  return (
+    <>
+      <button onClick={() => setdata(data + 1)}>Increment</button>
+      <pre>{data}</pre>
+      <button onClick={() => setdata(data - 1)}>Decrement</button>
+      <button onClick={() => setdata(data = 0)}>Reset</button>
+    </>
   );
 }
-
-
-
-
-
 export default App;

@@ -1,0 +1,49 @@
+{
+  "Student": [
+    {
+      "name": "nishant45",
+      "city": "abd",
+      "id": "1"
+    },
+    {
+      "id": "3",
+      "name": "nishant",
+      "city": "abd"
+    },
+    {
+      "id": "4",
+      "name": "nishant",
+      "city": "abd"
+    },
+    {
+      "id": "5",
+      "name": "nishant",
+      "city": "abd"
+    },
+    {
+      "id": "6",
+      "name": "nishant",
+      "city": "abd"
+    },
+    {
+      "id": "7",
+      "name": "nishant",
+      "city": "abd"
+    },
+    {
+      "id": "8",
+      "name": "nishant",
+      "city": "abd"
+    },
+    {
+      "id": "9",
+      "name": "nishant",
+      "city": "abd"
+    },
+    {
+      "id": "10",
+      "name": "nishant",
+      "city": "abd"
+    }
+  ]
+}
