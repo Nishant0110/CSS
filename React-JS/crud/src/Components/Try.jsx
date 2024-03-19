@@ -20,10 +20,7 @@ export default function Try() {
         setupdatedata({ update: mappeddata.id, name: mappeddata.name, city: mappeddata.city })
     }
     let submit = (id) => {
-        axios.put(`http://localhost:8000/Student/${id}`,
-            {
-                name: updatedata.name, city: updatedata.city
-            })
+        axios.put(`http://localhost:8000/Student/${id}`,{name: updatedata.name, city: updatedata.city})
             .then(() => {
                 setupdatedata({ update: null, name: "", city: "" })
                 fetch()
@@ -35,7 +32,6 @@ export default function Try() {
                 return (
                     <div key={id}>
                         <div>
-                            {/* <input type="text" name="" id="" value={mappeddata.id} /> */}
                             <input type="text" name="" id="" value={updatedata.name} onChange={(e) => setupdatedata({ ...updatedata, name: e.target.value })} />
                             <input type="text" name="" id="" value={updatedata.city} onChange={(e) => setupdatedata({ ...updatedata, city: e.target.value })} />
                             <button onClick={() => { submit(mappeddata.id) }}>submit</button>
