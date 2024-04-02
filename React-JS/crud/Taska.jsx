@@ -34,16 +34,21 @@ export default function Taska() {
         showdata.map((mappeddata, id) => {
             return (
                 <div key={id}>
-                    <div>
-                        <input type="text" name="" id="" value={updatedata.name} onChange={(e) => { setupdatedata({ ...updatedata, name: e.target.value }) }} />
-                        <input type="text" name="" id="" value={updatedata.city} onChange={(e) => { setupdatedata({ ...updatedata, city: e.target.value }) }} />
-                        <button type="submit" onClick={() => { mappeddata.id }}>submit</button>
-                    </div>
+                    {updatedata.update === mappeddata.id ?
+                        <div>
+                            <input type="text" name="" id="" value={updatedata.name} onChange={(e) => { setupdatedata({ ...updatedata, name: e.target.value }) }} />
+                            <input type="text" name="" id="" value={updatedata.city} onChange={(e) => { setupdatedata({ ...updatedata, city: e.target.value }) }} />
+                            <button type="submit" onClick={() => submit(mappeddata.id)}>submit</button>
+                        </div> :
+                        <div>     <p>name:{mappeddata.name}</p>
+                            <p>city:{mappeddata.city}</p>
+                            <button onClick={() => { edit(mappeddata) }}>edit</button>
+                            <button onClick={() => { del(mappeddata.id) }}>delete</button>
+                        </div>
+                    }
 
-                    <p>name:{mappeddata.name}</p>
-                    <p>city:{mappeddata.city}</p>
-                    <button onClick={() => { edit(mappeddata) }}>edit</button>
-                    <button onClick={() => { del(mappeddata.id) }}>delete</button>
+
+
                 </div>
             )
         })
