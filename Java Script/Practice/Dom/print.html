@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">title</h1>
+    <button onclick="fun('heading')">click here to print heading</button>
+    <p id="movie">Movie Name</p>
+    <button onclick="fun('movie')">click here</button>
+    <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum saepe odio perferendis. Perspiciatis
+        illum vero
+        ullam earum quisquam reprehenderit nulla!</p>
+    <button onclick="fun('lorem')">click</button>
+    <script>
+        function fun(paravalue) {
+            var cpy = document.body.innerHTML;
+            var content = document.getElementById(paravalue).innerHTML;
+            document.body.innerHTML = content;
+            window.print();
+            document.body.innerHTML = cpy;
+        }
+    </script>
+</body>
+
+</html>

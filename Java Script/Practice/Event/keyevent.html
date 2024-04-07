@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Key event</h1>
+    <button onkeypress="keypress()"> keypress</button>
+    <button onkeydown="keydown()"> keydown</button>
+    <button onkeyup="keyup()"> keyup</button>
+    <script>
+        function keypress() {
+        document.body.style.backgroundColor='red'
+        }
+        function keydown() {
+        document.body.style.backgroundColor='#99ff22'
+        }
+        function keyup() {
+        document.body.style.backgroundColor='#223585'
+        }
+    </script>
+</body>
+
+
+</html>
