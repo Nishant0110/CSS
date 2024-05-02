@@ -24,8 +24,8 @@ export default function Navbar() {
 
             <div >
                 {nav.map((item, i) => (
-                    <div key={i} className='inline-block mx-5'>
-                        {item.icon && <item.icon className='text-2xl' />}</div>
+                    <div key={i} className='inline-block'>
+                        {item.icon && <item.icon className='text-2xl mx-5' />}</div>
                 )
                 )}
             </div>

@@ -5,12 +5,12 @@ export default function Cards() {
     return (
         <div className='px-9'>
             <h2 className='text-5xl py-8'>{card.map((item, i) => (item.heading))}</h2>
-            <div className=' w-[100%]  flex justify-around' >
+            <div className='  flex justify-between' >
                 {card.map((item, i) => {
                     return (
                         <div className=''>
-                            <img src={item.card_img} alt="" />
-                            <p className='w-[60%] font-light'>{item.card_name}</p>
+                            <img className='w-[100%] h-[350px]'src={item.card_img} alt="" />
+                            <p className='w-50 font-light'>{item.card_name}</p>
                             <p>{item.card_price}</p>
                         </div>
                     )
