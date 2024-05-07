@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="demo">
+    <form>
+        <button class="btn">click</button>
+        <input type="text" name="Uname" id="1" placeholder="Userrname">
+        <input type="password" name="pwd" id="2" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>
+    <script type="text/javascript">
+
+        //Simple B
+
+
+        const wait = () => {
+            console.log("start");
+            setTimeout(() => {
+                console.log("end");
+            }, 2000);
+        }
+        let btn = document.querySelector(".btn");
+        btn.addEventListener('click',wait);
+
+        
+        //simple A
+        /*const wait = () => {
+            console.log("script part start");
+
+            let start = new Date().getTime();
+            console.log(new Date().getTime() - start);
+            while (new Date().getTime() - start < 5000);
+            console.log("done");
+        }
+        let btn = document.querySelector(".btn");
+        btn.addEventListener('click', wait);*/
+
+
+
+        /*
+        //simple 
+        const fun2 = () => {
+            setTimeout(() => { 
+                console.log("fun2 is starting") 
+            }, 3000)
+        }
+        const fun1 = () => {
+            console.log("fun1 is starting");
+            fun2();
+            console.log("fun1 is ending");
+        }
+        fun1();
+        */
+
+
+    </script>
+</body>
+
+</html>

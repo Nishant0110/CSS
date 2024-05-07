@@ -1,14 +1,14 @@
 import react, { Suspense } from 'react';
-import ErrorBoundry from './assets/Component/ErrorBoundry';
+import ErrorBoundry1 from './assets/Component/ErrorBoundry';
 
-const LazyComp = react.lazy(() => import("../src/assets/Component/LazyComp"));
+const LazyComp1 = react.lazy(() => import("../src/assets/Component/LazyComp"));
 
 export default function App() {
   return (
-    <ErrorBoundry>
+    <ErrorBoundry1>
       <Suspense fallback={<p>Loading</p>}>
-        <LazyComp />
+        <LazyComp1 />
       </Suspense>
-    </ErrorBoundry>
+    </ErrorBoundry1>
   )
 }

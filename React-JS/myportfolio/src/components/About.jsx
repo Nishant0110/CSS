@@ -3,8 +3,8 @@ import { useState } from "react";
 const About = () => {
     const [showCV, setShowCV] = useState(false);
     const info = [
-        { text: "Years experience", count: "04" },
-        { text: "Completed Projects", count: "24" },
+        { text: "Years experience", count: "08" },
+        { text: "Completed Projects", count: "235" },
         { text: "Companies Work", count: "06" },
     ];
     const handleCVDownload = () => {
@@ -37,9 +37,9 @@ const About = () => {
                             <br />
                             <br />
 
-                            <button className="btn-primary" onClick={ handleCVDownload }>Download CV</button>
+                            <button className="btn-primary" onClick={handleCVDownload}>Download CV</button>
                             {showCV && (
-                                <iframe 
+                                <iframe
                                     src="../src/assets/CV.pdf"
                                     title="CV"
                                     width="100%"
