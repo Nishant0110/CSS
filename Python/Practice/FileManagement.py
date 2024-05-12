@@ -1,0 +1,31 @@
+file=open("tops1.txt","w")
+file.write("This is file management demo using python.")
+file.close()
+print("File Written Successfully")
+print("***********************************************************")
+
+file=open("tops1.txt","r")
+print(file.read())
+file.close()
+print("*************")
+
+file=open("tops1.txt","a")
+file.write("this is append data part")
+file.close()
+print("file data appended success")
+print("*************")
+
+file=open("tops1.txt","r")
+print(file.read())
+file.close()
+print("*************")
+
+
+file=open("tops2.txt","w+")
+file.write("this is w+ part")
+print("current file position:",file.tell())
+file.seek(9)
+print(file.read())
+file.close()
+print("W+ Operation Completed")
+print("************************")
