@@ -1,6 +1,3 @@
-Generator Name: Pritesh
-Title: Fundamental of Java
-Content: Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.
-Generator Name: nishant lakahni
-Title: Python Fundamental
-Content: Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+Generator Name: rajesh
+Title: ankahi katha
+Content: family related series
