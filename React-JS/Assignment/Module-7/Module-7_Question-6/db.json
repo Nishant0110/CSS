@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "5069",
+      "username": "nishant",
+      "password": "1234"
+    },
+    {
+      "id": "26d3",
+      "username": "lakhani",
+      "password": "1234"
+    },
+    {
+      "id": "db8d",
+      "name": "krupali"
+    }
+  ],
+  "items": [
+    {
+      "id": "1",
+      "name": "Item 1"
+    },
+    {
+      "id": "2",
+      "name": "Item 2"
+    }
+  ]
+}
