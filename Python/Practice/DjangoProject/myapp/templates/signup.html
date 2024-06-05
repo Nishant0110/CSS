@@ -114,7 +114,7 @@
 		{% if msg %}
 			<b style="color: blue;">{{msg}}</b>
 		{% endif %}
-		<form name="signup" method="post" action="{% url 'signup' %}">
+		<form name="signup" method="post" action="{% url 'signup' %} " enctype="multipart/form-data">
 			{% csrf_token %}
 			<table>
 				<tr>
@@ -150,6 +150,9 @@
 					<td>Confirm Password</td>
 					<td><input type="password" name="cpassword" onblur="checkCPassword();"></td>
 					<td><span id="cpassword" style="color:red;"></span></td>
+				</tr>
+				<tr>	<td>Profile Picture</td>
+						<td><input type="file" name="profile_picture"></td>
 				</tr>
 				<tr>
 					<td colspan="2" align="center">
