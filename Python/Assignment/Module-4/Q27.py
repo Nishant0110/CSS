@@ -1,7 +1,8 @@
 # What is used to check whether an object o is an instance of class A?
 '''
-
+This function is particularly useful for ensuring type safety and for implementing type-specific logic in your code.
 '''
+
 class A:
     pass
 

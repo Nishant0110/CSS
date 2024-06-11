@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+    }
+    
+    .slider-area {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .slider-img {
+        position: relative;
+    }
+    
+    .slick-list {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    
+    .slick-track {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .slick-slide {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .position-relative {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .homepageImg {
+        display: block;
+        width: 100%;
+    }
+    
+    .bannerContent {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+    }
+    
+    .slidertext h1, .slidertext p {
+        margin: 0;
+    }
+    
+    .sliderbtn .btn {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    .slick-dots {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .slick-dots li {
+        margin: 0 5px;
+    }
+    
+    .slick-dots button {
+        background-color: #007bff;
+        border: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .slick-active button {
+        background-color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="slider-area homeSlide">
+        <div class="slider-img">
+            <div class="slick-list">
+                <div class="slick-track">
+                    <div class="slick-slide">
+                        <div class="position-relative">
+                            <picture class="homepageImg">
+                                <source media="(max-width:575px)" srcset="https://www.hathway.com/home_images/hero_mslider_5.jpg">
+                                <img class="homeBannerimg" src="https://www.hathway.com/home_images/hero_slider_5.jpg" alt="Slider Image">
+                            </picture>
+                            <div class="bannerContent">
+                                <div class="slidertext">
+                                    <h1>We bring your devotion, home!</h1>
+                                    <p>Live Darshan is now available on Hathway Digital TV!</p>
+                                </div>
+                                <div class="sliderbtn">
+                                    <button class="btn"><a href="https://www.hathway.com/Digital/DigitalCableTV?utm_source=explore+hathway+digital+tv&amp;utm_medium=Button+Tab&amp;utm_campaign=Home+Banner">Learn more</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slide">
+                        <div class="position-relative">
+                            <picture class="homepageImg">
+                                <source media="(max-width:575px)" srcset="https://www.hathway.com/home_images/hero_mslider_5.jpg">
+                                <img class="homeBannerimg" src="https://www.hathway.com/home_images/hero_slider_5.jpg" alt="Slider Image">
+                            </picture>
+                            <div class="bannerContent">
+                                <div class="slidertext">
+                                    <h1>We bring your devotion, home!</h1>
+                                    <p>Live Darshan is now available on Hathway Digital TV!</p>
+                                </div>
+                                <div class="sliderbtn">
+                                    <button class="btn"><a href="https://www.hathway.com/Digital/DigitalCableTV?utm_source=explore+hathway+digital+tv&amp;utm_medium=Button+Tab&amp;utm_campaign=Home+Banner">Learn more</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more slides here in similar format -->
+                </div>
+            </div>
+            <ul class="slick-dots">
+                <li class="slick-active"><button type="button">1</button></li>
+                <li class="slick-active"><button type="button">2</button></li>
+                <!-- Add more dots here -->
+            </ul>
+        </div>
+    </div>
+
+    <script >const track = document.querySelector('.slick-track');
+        const slides = Array.from(track.children);
+        const nextButton = document.querySelector('.slick-next');
+        const prevButton = document.querySelector('.slick-prev');
+        const dotsNav = document.querySelector('.slick-dots');
+        const dots = Array.from(dotsNav.children);
+        
+        const slideWidth = slides[0].getBoundingClientRect().width;
+        
+        // Arrange slides next to each other
+        const setSlidePosition = (slide, index) => {
+            slide.style.left = slideWidth * index + 'px';
+        };
+        slides.forEach(setSlidePosition);
+        
+        const moveToSlide = (track, currentSlide, targetSlide) => {
+            track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+            currentSlide.classList.remove('slick-active');
+            targetSlide.classList.add('slick-active');
+        };
+        
+        const updateDots = (currentDot, targetDot) => {
+            currentDot.classList.remove('slick-active');
+            targetDot.classList.add('slick-active');
+        };
+        
+        dotsNav.addEventListener('click', e => {
+            const targetDot = e.target.closest('button');
+        
+            if (!targetDot) return;
+        
+            const currentSlide = track.querySelector('.slick-active');
+            const currentDot = dotsNav.querySelector('.slick-active');
+            const targetIndex = dots.findIndex(dot => dot === targetDot);
+            const targetSlide = slides[targetIndex];
+        
+            moveToSlide(track, currentSlide, targetSlide);
+            updateDots(currentDot, targetDot);
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+
+    <style>
+        .slider-item {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-slide {
+            position: absolute;
+            bottom: 20px;
+        }
+    </style>
+</head>
+
+<body id="section_1">
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-geo-alt me-2"></i>
+                        Ahmedabad,India
+                    </p>
+                    <p class="d-flex mb-0">
+                        <i class="bi-envelope me-2"></i>
+                        <a href="mailto:info@company.com">
+                            info@company.com
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                    <ul class="social-icon d-flex">
+                        <li class="social-icon-item list-unstyled">
+                            <a href="#" class="social-icon-link bi-twitter"></a>
+                        </li>
+                        <li class="social-icon-item list-unstyled">
+                            <a href="#" class="social-icon-link bi-facebook"></a>
+                        </li>
+                        <li class="social-icon-item list-unstyled">
+                            <a href="#" class="social-icon-link bi-instagram"></a>
+                        </li>
+                        <li class="social-icon-item list-unstyled">
+                            <a href="#" class="social-icon-link bi-youtube"></a>
+                        </li>
+                        <li class="social-icon-item list-unstyled">
+                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/Logo/logo.png" class="logo img-fluid" alt="">
+                <span>
+                    Internet Service Provider
+                    <small>Serve Batter service</small>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#top">Home</a>
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Broadband
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Residental Plan</a></li>
+                            <li><a class="dropdown-item" href="#">Business Plan</a></li>
+                            <li><a class="dropdown-item" href="#">New Connection</a></li>
+                            <li><a class="dropdown-item" href="#">Quick Recharge</a></li>
+                            <li><a class="dropdown-item" href="#">Connection Shifting</a></li>
+                            <li><a class="dropdown-item" href="#">Cancel Connection</a></li>
+                            <li><a class="dropdown-item" href="#">Helpline</a></li>
+                            <li><a class="dropdown-item" href="#">FAQs</a></li>
+                            <li><a class="dropdown-item" href="#">Consumer Corner</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Digital Cable TV
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#service1">Packages</a></li>
+                            <li><a class="dropdown-item" href="#service2">New Connection</a></li>
+                            <li><a class="dropdown-item" href="#service3">Quick Recharge</a></li>
+                            <li><a class="dropdown-item" href="#service3">Helpline</a></li>
+                            <li><a class="dropdown-item" href="#service3">FAQs</a></li>
+                            <li><a class="dropdown-item" href="#service3">Consumer Corner</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_6">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_6">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_6">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-section hero-section-full-height">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-12">
+                            <img src="./Asset/HomeFiber/homefiber.jpeg" class="img-fluid" alt="Home Broadband">
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <p class="phighlight">HOME BROADBAND</p>
+                            <h2 class="mb-4">Redefine Entertainment with Hathway Digital TV</h2>
+                            <ul class="list-unstyled">
+                                <li class="py-2">
+                                    <i class="bi bi-check-lg"></i> Weatherproof signal with no rain interruptions
+                                </li>
+                                <li class="py-2">
+                                    <i class="bi bi-check-lg"></i> Easy and quick installation
+                                </li>
+                                <li class="py-2">
+                                    <i class="bi bi-check-lg "></i> HD set-top box for exceptional picture quality and
+                                    digital sound
+                                </li>
+                            </ul>
+                            <div class="">
+                                <a href="#" class="btn custom-btn">New Connection</a>
+                                <a href="#" class="btn custom-btn">Account Login</a>
+                                <a href="#" class="btn custom-btn">Pay Bill</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="hero-section hero-section-full-height">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-12">
+                            <p class="phighlight ">DIGITAL TV</p>
+                            <h2 class="mb-4">Get the best WiFi for your home backed by Fiber technology</h2>
+                            <ul class="list-unstyled">
+                                <li class="py-2">
+                                    <i class="bi bi-check-lg"></i> Stream and Download with ease
+                                </li>
+                                <li class="py-2">
+                                    <i class="bi bi-check-lg"></i> In a matter of seconds, you can share photos and
+                                    videos
+                                </li>
+                                <li class="py-2">
+                                    <i class="bi bi-check-lg "></i> Enjoy Seamless Video Conferencing
+                                </li>
+                            </ul>
+                            <div class="">
+                                <a href="#" class="btn custom-btn">New Connection</a>
+                                <a href="#" class="btn custom-btn">Account Login</a>
+                                <a href="#" class="btn custom-btn">Pay Bill</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <img src="./images/hero section/digitaltv.jpeg" class="img-fluid" alt="Home Broadband">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="contact-section section-padding" id="section_6">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-12 ms-auto mb-5 mb-lg-0">
+                        <div class="contact-info-wrap">
+                            <h2>Get in touch</h2>
+
+                            <!-- <div class="contact-image-wrap d-flex flex-wrap">
+                                <img src="images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg"
+                                    class="img-fluid avatar-image" alt="">
+
+                                <div class="d-flex flex-column justify-content-center ms-3">
+                                    <p class="mb-0">Clara Barton</p>
+                                    <p class="mb-0"><strong>HR & Office Manager</strong></p>
+                                </div>
+                            </div> -->
+
+                            <div class="contact-info">
+                                <h5 class="mb-3">Contact Infomation</h5>
+
+                                <p class="d-flex mb-2">
+                                    <i class="bi-geo-alt me-2"></i>
+                                    Akershusstranda 20, 0150 Oslo, Norway
+                                </p>
+
+                                <p class="d-flex mb-2">
+                                    <i class="bi-telephone me-2"></i>
+
+                                    <a href="tel: 305-240-9671">
+                                        305-240-9671
+                                    </a>
+                                </p>
+
+                                <p class="d-flex">
+                                    <i class="bi-envelope me-2"></i>
+
+                                    <a href="mailto:info@yourgmail.com">
+                                        donate@charity.org
+                                    </a>
+                                </p>
+
+                                <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-12 mx-auto">
+                        <form class="custom-form contact-form" action="#" method="post" role="form">
+                            <h2>Contact form</h2>
+
+                            <p class="mb-4">Or, you can just send an email:
+                                <a href="#">info@charity.org</a>
+                            </p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <input type="text" name="first-name" id="first-name" class="form-control"
+                                        placeholder="Jack" required>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <input type="text" name="last-name" id="last-name" class="form-control"
+                                        placeholder="Doe" required>
+                                </div>
+                            </div>
+
+                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control"
+                                placeholder="Jackdoe@gmail.com" required>
+
+                            <textarea name="message" rows="5" class="form-control" id="message"
+                                placeholder="What can we help you?"></textarea>
+
+                            <button type="submit" class="form-control">Send Message</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12 mb-4">
+                        <img src="images/logo.png" class="logo img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <h5 class="site-footer-title mb-3">Quick Links</h5>
+
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Our Story</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Newsroom</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Causes</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Become a volunteer</a>
+                            </li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Partner with us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                        <h5 class="site-footer-title mb-3">Contact Infomation</h5>
+
+                        <p class="text-white d-flex mb-2">
+                            <i class="bi-telephone me-2"></i>
+
+                            <a href="tel: 305-240-9671" class="site-footer-link">
+                                305-240-9671
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <i class="bi-envelope me-2"></i>
+
+                            <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                                donate@charity.org
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex mt-3">
+                            <i class="bi-geo-alt me-2"></i>
+                            Akershusstranda 20, 0150 Oslo, Norway
+                        </p>
+
+                        <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-7 col-12">
+                            <p class="copyright-text mb-0">Copyright © 2036 <a href="#">Kind Heart</a> Charity Org.
+                                Design: <a href="https://templatemo.com" target="_blank">TemplateMo</a><br>Distribution:
+                                <a href="https://themewagon.com">ThemeWagon</a>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
+                            <ul class="social-icon">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-twitter"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-facebook"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-instagram"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-linkedin"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="https://youtube.com/templatemo" class="social-icon-link bi-youtube"></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
