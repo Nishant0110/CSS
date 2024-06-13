@@ -26,7 +26,7 @@
                     {% if msg%}
                     <b class="text-primary">{{msg}}</b>
                     {% endif %}
-                    <form action="{% url 'login'%}" method="post" enctype="multipart/form-data">
+                    <form action="{% url 'login' %}" method="post" enctype="multipart/form-data">
                         {% csrf_token%}
                         <h4 class="mtext-105 cl2 txt-center p-b-30">
                             Login for User
@@ -43,6 +43,7 @@
                             Login
                         </button>
                     </form>
+                    <a href="{% url 'forgot-password' %}">Forgot Password</a>
                 </div>
             </div>
         </div>
