@@ -160,13 +160,13 @@ def forgot_password(request):
             mobile = request.POST['mobile']
             otp = str(random.randint(1000, 9999))
            # url = "https://www.fast2sms.com/dev/bulkV2"
-            # querystring = {"authorization":"DwF5Auzh16qo3fXC2JMSTcOiyBEZmWH0eR8GIg4NbQrpUnKsjvhz0YwyOCGvHJEFuXRrTc7feDVaM1NA","variables_values":otp,"route":"otp","numbers":mobile}
+            # querystring = {"authorization":"","variables_values":otp,"route":"otp","numbers":mobile}
             # headers = {'cache-control': "no-cache"}
             # response = requests.request("GET", url, headers=headers, params=querystring)
             # print(response.text)
 
             url = "https://www.fast2sms.com/dev/bulkV2"
-            querystring = {"authorization": "e7V4w5uo6KXFsgC3qU8h0Dy2ONEbHpzcI9kYL1xJnBtRfmrTiaUl410wxoPErCv9KLs85NmuFXHtaIjB",
+            querystring = {"authorization": "",
                            "message": "OTP "+otp, "language": "english", "route": "q", "numbers": mobile}
             headers = {'cache-control': "no-cache"}
             response = requests.request(
