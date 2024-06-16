@@ -1,13 +1,19 @@
 from django.shortcuts import render
-from .models import User
+from .models import User,Product
 import requests
 import random
 # Create your views here.
 
 
 def index(request):
-    return render(request, 'index.html')
-
+    try:
+        user=User.objects.get(email=request.session['email'])
+        if user.usertype=="buyer":
+            return render(request, 'index.html')
+        else:
+            return render(request, 'seller-index.html')
+    except:
+        return render(request, 'index.html')
 
 def contact(request):
     return render(request, 'contact.html')
@@ -71,7 +77,8 @@ def login(request):
             else:
                 msg = "Incorrect Password"
                 return render(request, 'login.html', {'msg': msg})
-        except:
+        except Exception as e :
+            print(e)
             msg = "Email Not Registered"
             return render(request, 'login.html', {'msg': msg})
     else:
@@ -160,13 +167,13 @@ def forgot_password(request):
             mobile = request.POST['mobile']
             otp = str(random.randint(1000, 9999))
            # url = "https://www.fast2sms.com/dev/bulkV2"
-            # querystring = {"authorization":"","variables_values":otp,"route":"otp","numbers":mobile}
+            # querystring = {"authorization":"key","variables_values":otp,"route":"otp","numbers":mobile}
             # headers = {'cache-control': "no-cache"}
             # response = requests.request("GET", url, headers=headers, params=querystring)
             # print(response.text)
 
             url = "https://www.fast2sms.com/dev/bulkV2"
-            querystring = {"authorization": "",
+            querystring = {"authorization": "key",
                            "message": "OTP "+otp, "language": "english", "route": "q", "numbers": mobile}
             headers = {'cache-control': "no-cache"}
             response = requests.request(
@@ -205,3 +212,29 @@ def new_password(request):
     else:
         msg = "new password and confirm password doesn't Matched"
         return render(request, 'new-password.html', {'msg': msg})
+
+
+def seller_add_product(request):
+    seller=User.objects.get(email=request.session['email'])
+    if request.method=="POST":
+        Product.objects.create(
+        seller=seller,
+        product_category=request.POST['product_category'],
+        product_price=request.POST['product_price'],
+        product_name=request.POST['product_name'],
+        product_desc=request.POST['product_desc'],
+        product_image=request.FILES['product_image'],
+    )
+        msg="Product Added Successfully"
+        return render(request, 'seller-add-product.html', {'msg':msg})
+    else:
+        return render(request, 'seller-add-product.html')
+    
+def seller_view_product(request):
+    seller=User.objects.get(email=request.session['email'])
+    products=Product.objects.filter(seller=seller)
+    return render(request,'seller-view-product.html',{'products':products})
+
+def seller_product_details(request,pk):
+    product=Product.objects.get(pk=pk)
+    return render(request,'seller-product-details.html',{'product':product})
