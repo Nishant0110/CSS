@@ -9,9 +9,6 @@
 </head>
 
 <body class="animsition">
-
-
-
 	<!-- Product Detail -->
 	<section class="sec-product-detail bg0 p-t-65 p-b-60">
 		<div class="container">
@@ -28,7 +25,7 @@
 										<img src="{{product.product_image.url}}" alt="IMG-PRODUCT">
 
 										<a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
-											href="{% static 'images/product-detail-01.jpg' %}">
+											href="{{product.product_image.url}}">
 											<i class="fa fa-expand"></i>
 										</a>
 									</div>
@@ -51,6 +48,12 @@
 						<p class="stext-102 cl3 p-t-23">
 							{{product.product_desc}}
 						</p>
+						<span class="mtext-106 cl2">
+							<a href="{% url 'seller-edit-product' pk=product.pk %}"><input type="button" class="btn btn-primary" value="EDIT"></a>
+						</span>
+						<span class="mtext-106 cl2">
+							<a href="{% url 'seller-delete-product' pk=product.pk %}"><input type="button" class="btn btn-danger" value="DELETE"></a>
+						</span>
 					</div>
 				</div>
 			</div>
