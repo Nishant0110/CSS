@@ -32,8 +32,8 @@
                             Login for User
                         </h4>
                         <div class="bor8 m-b-20 how-pos4-parent">
-                            <input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="email" name="email"
-                                placeholder="Enter Your Email Address">
+                            <input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="email" name="email" id="email" placeholder="Enter Your Email Address">
+                            <span id="email_error"></span>  
                         </div>
                         <div class="bor8 m-b-20 how-pos4-parent">
                             <input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="password" name="password"
@@ -48,6 +48,28 @@
             </div>
         </div>
     </section>
+    <script>
+          $("#email").change(function(){
+            var email=$(this).val();
+            //alert(email);
+            $.ajax({
+              url: '/ajax/validate_email/',
+              data: {
+                'email': email
+              },
+              dataType: 'json',
+              success: function (data) {
+                if (data.is_taken) {
+                  /*document.getElementById("email").style.border="5px solid red";*/
+                  document.getElementById("email_error").innerHTML="";
+                }else{
+                  document.getElementById("email_error").innerHTML="This Email ID Is Not Registered";
+                }
+              }
+            });
+          });
+
+        </script>
 </body>
 
 </html>

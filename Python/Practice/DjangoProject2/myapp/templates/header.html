@@ -33,7 +33,7 @@
 
 	<link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	
@@ -96,6 +96,9 @@
 							{% if request.session.email %}
 								<li>
 									<a href="{% url 'change-password' %}">Change Password</a>
+								</li>
+								<li>
+									<a href="{% url 'myorder' %}">My Order</a>
 								</li>
 								<li>
 									<a href="{% url 'logout' %}">Logout({{request.session.fname}})</a>
