@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ product.product_name }}</title>
+</head>
+<body>
+    <h1>{{ product.product_name }}</h1>
+    <a href="{% url 'product_update' product.pk %}">Edit</a>
+    <a href="{% url 'product_delete' product.pk %}">Delete</a>
+    <h2>Sub Categories</h2>
+    <a href="{% url 'sub_category_create' product.pk %}">Add Sub Category</a>
+    <ul>
+        {% for sub_category in sub_categories %}
+            <li>{{ sub_category.product_model }} - {{ sub_category.product_price }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=D:\Fullstack\HTML-CSS-JS\Python\Assignment\Module-5\Q5\myvenv
+set VIRTUAL_ENV=D:\Fullstack Repo\HTML-CSS-JS\Python\Assignment\Module-5\Q5\myvenv
 
 if not defined PROMPT set PROMPT=$P$G
 
