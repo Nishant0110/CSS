@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="dashboard-header bg-light p-3 mb-3">
+    <h2>Dashboard Manage Institute</h2>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">{{ students }}</h5>
+                <p class="card-text">Students</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">{{ teachers }}</h5>
+                <p class="card-text">Teachers</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">{{ clubs }}</h5>
+                <p class="card-text">Clubs</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">{{ books }}</h5>
+                <p class="card-text">Books</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-8">
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1461631609/photo/happy-smiling-students-looking-at-camera-while-preparing-for-exams-by-reading-books-at.jpg?s=2048x2048&w=is&k=20&c=slKZ7dWw9DRhNksFTtygkn4DwNo4G5Rzj2Tz-gXkhgs=" class="card-img-top" alt="Event">
+            <div class="card-body">
+                <h5 class="card-title">DPI-Event-101</h5>
+                <p class="card-text">Washington DC | Maricuri Park</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card bg-warning text-center">
+            <div class="card-body">
+                <h5 class="card-title">No meeting scheduled</h5>
+            </div>
+        </div>
+        <div class="card bg-danger text-white text-center mt-3">
+            <div class="card-body">
+                <h5 class="card-title">Student Care: Absent</h5>
+                <p class="card-text">10</p>
+            </div>
+        </div>
+        <div class="card text-center mt-3">
+            <div class="card-body">
+                <h5 class="card-title">ToDo List</h5>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
