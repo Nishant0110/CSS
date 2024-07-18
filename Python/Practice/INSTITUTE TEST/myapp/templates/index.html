@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+
+<body>
+    <div class="container">
+        {% if msg %}
+            <b style="color: blue;">{{ msg }}
+        {% endif %}
+            <h1>Welcome!</h1>
+
+            {% if request.session.email %}
+            <h1>User Data</h1>
+            <table border="2px solid black" class="responsive-centered-table">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Pharmacy Name</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ request.session.fname }}</td>
+                        <td>{{ request.session.lname }}</td>
+                        <td>{{ request.session.email }}</td>
+                        <td>{{ request.session.pharmacyname }}</td>
+                        <td>{{ request.session.number }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            {% endif %}
+            <div class="button-container d-flex justify-content-center">
+                {% if request.session.email %}
+                <a href="{% url 'add-medicine' %}" class="btn btn-primary me-2">Add-medicine</a>
+                <a href="{% url 'view-medicines' %}" class="btn btn-primary me-2">View-medicines</a>
+                <a href="{% url 'logout' %}" class="btn btn-primary">Logout</a>
+                {% else %}
+                <a href="{% url 'signup' %}" class="btn btn-primary me-2">Signup</a>
+                <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+                {% endif %}
+            </div>
+    </div>
+</body>
+
+</html>

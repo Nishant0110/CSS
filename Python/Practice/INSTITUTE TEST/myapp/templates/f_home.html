@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index Page</title>
+</head>
+
+<body>
+    {% if msg %}
+    <b style="color: blue;">{{ msg }}</b>
+    {% endif %}
+    <h2>index Page</h2>
+
+
+    {% if request.session.f_email %}
+    <h2>{{ request.session.fac_email}}</h2>
+    <a href="{% url 'add-student' %}">Add-student</a>
+    <a href="{% url 'view-student' %}">view-student</a>
+    <a href="{% url 'logout' %}" class="btn btn-primary">Logout</a>
+    {% else %}
+    <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+    {% endif %}
+</body>
+
+</html>

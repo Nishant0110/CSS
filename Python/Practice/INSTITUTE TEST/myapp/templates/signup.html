@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Sign Up</h2>
+    <form action="{% url 'signup' %}" method="post">
+      {% csrf_token %}
+        <div class="form-group">
+          <label for="f_name">First Name:</label>
+          <input type="text" id="f_name" name="f_name" placeholder="Enter your first name" required>
+        </div>
+        <div class="form-group">
+          <label for="f_email">Email Address:</label>
+          <input type="email" id="email" name="f_email" placeholder="Enter your email address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="f_password">Password:</label>
+          <input type="password" id="password" name="f_password" placeholder="Password" required minlength="8">
+        </div>
+
+        <div class="form-group">
+          <label for="f_cpassword">Confirm Password:</label>
+          <input type="password" id="cpassword" name="f_cpassword" placeholder="Confirm password" required>
+        </div>
+
+        {% if msg %}
+          <b style="color: blue;">{{ msg }}</b>
+        {% endif %}
+
+        <input type="submit" value="Sign Up" class="btn btn-primary">
+    </form>
+  </div>
+</body>
+</html>
+
