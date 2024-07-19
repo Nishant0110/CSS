@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.shortcuts import redirect
 from .models import Faculty,Student
+from django.conf import settings
+from django.core.mail import send_mail
 # Create your views here.
 def index(request):
     return render(request, 'index.html')
@@ -71,12 +73,17 @@ def student(request):
             qualification=request.POST['qualification'],
             address=request.POST['address'],
             )
+            # email 
+            subject = 'welcome to GFG world'
+            message = f'Hi {student.fname},\n\nYou have been successfully registered as a student.\n\nThank you,\nSchool Administration'
+            # email_from = settings.EMAIL_HOST_USER
+            email_from = request.session.get('f_email', settings.EMAIL_HOST_USER)
+            recipient_list = [student.email, ]
+            send_mail( subject, message, email_from, recipient_list )
             return redirect('view-student')
     else:
         return render(request,'f_home.html')
 
-    
-  
 def view_student(request):
    faculty=Faculty.objects.get(f_email=request.session['f_email'])
    msg1=Student.objects.filter(faculty=faculty)
@@ -91,8 +98,6 @@ def delete(request, pk):
 def edit(request,pk):
     student = Student.objects.get(pk=pk)
     return render(request,'student-edit.html',{'student':student})
-
-
 
 def student_edit(request,pk):
     student = Student.objects.get(pk=pk)
