@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var data = [
+            { name: 'nishant', age: 45 },
+            { name: 'kishan', age: 25 },
+            { name: 'krushant', age: null },
+            { name: 'ankit', age: undefined },
+            { name: null, age: undefined }
+        ];
+
+        const newargs = data.filter((i) => {
+            return i.age != undefined;
+        })
+        console.log(newargs);
+    </script>
+</body>
+
+</html>
