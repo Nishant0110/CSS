@@ -17,10 +17,7 @@ const Navbar = () => {
     });
   }, []);
   return (
-    <nav
-      className={`fixed w-full left-0 top-0 z-[999] ${sticky ? "bg-slate-700  text-gray-900" : "text-white"
-        }`}
-    >
+    <nav className={`fixed w-full left-0 top-0 z-[999] ${sticky ? "bg-slate-700  text-gray-900" : "text-white"}`}>
       <div className="flex items-center justify-between">
         <div className="mx-7">
           <h4 className="text-4xl uppercase font-bold">
@@ -42,7 +39,7 @@ const Navbar = () => {
         <div
           onClick={() => setOpen(!open)}
           className={`z-[999]  ${open ? "text-gray-100" : "text-gray-100"
-            } text-3xl md:hidden m-5`}
+            } text-3xl md:hidden m-`}
         >
           <ion-icon name="menu"></ion-icon>
         </div>

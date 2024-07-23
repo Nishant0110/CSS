@@ -7,7 +7,7 @@ import About from './components/About'
 import Skills from './components/Myskill'
 import Hireme from './components/Hireme'
 import Contact from './components/Contact'
-import Copy from './components/Copy'
+import Project from './components/Project'
 
 function App() {
 
@@ -18,9 +18,9 @@ function App() {
       <Hero />
       <About />
       <Skills />
+      <Project/>
       <Hireme />
       <Contact />
-      <Copy />
     </>
   )
 }
