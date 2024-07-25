@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Three Variable
+        // let a = 10, b = 20;
+        // let c = a;
+        // a = b; b = c;
+        // console.log('a is', a, 'b is ', b);
+
+        // Two Variable
+        // let a=10,b=20;
+        // a=a+b;//30
+        // b=a-b;//10
+        // a=a-b;//20
+        // console.log('a is', a, 'b is ', b);
+
+        // Measure time for Three Variable Method
+        let a = 10, b = 20;
+        console.time('Three Variable Method');
+        for (let i = 0; i < 1000000; i++) {
+            let tempA = a, tempB = b;
+            let c = tempA;
+            tempA = tempB;
+            tempB = c;
+        }
+        console.timeEnd('Three Variable Method');
+
+        // Measure time for Two Variable Method
+        a = 10; b = 20;
+        console.time('Two Variable Method');
+        for (let i = 0; i < 1000000; i++) {
+            let tempA = a, tempB = b;
+            tempA = tempA + tempB;
+            tempB = tempA - tempB;
+            tempA = tempA - tempB;
+        }
+        console.timeEnd('Two Variable Method');
+
+
+    </script>
+</body>
+
+</html>

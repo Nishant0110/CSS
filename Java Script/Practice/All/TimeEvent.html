@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="myData">Welcome to my website!</p>
+    <button onclick="startTimer()">Start</button>
+    <button>Stop</button>
+    <script>
+        let myData=document.querySelector("#myData");
+        let num=0
+        function welcome(){
+            myData.innerHTML ='Welcome to homepage'
+        }
+        function startTimer(){ 
+            // myData.innerHTML ='Loading....'
+            setTimeout(welcome,2000)
+        }
+    </script>
+</body>
+
+</html>
