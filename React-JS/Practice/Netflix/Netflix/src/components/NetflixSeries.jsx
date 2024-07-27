@@ -1,33 +1,14 @@
 import React from "react";
 import SeriesData from "../API/SeriesData.json";
+import SeriesCard from "../SeriesCard";
 
-const NetflixSeries = () => {
+
+function NetflixSeries() {
   return (
-    <>
-      <div>
-        <img
-          src={SeriesData[0].img_url}
-          alt="10"
-          style={{
-            width: "300px",
-            height: "auto",
-          }}
-        />
-      </div>
-      <h1>{SeriesData[0].name}</h1>
-      <div>
-        <img
-          src={SeriesData[1].img_url}
-          alt="1"
-          style={{
-            width: "300px",
-            height: "auto",
-          }}
-        />
-      </div>
-      <h1>{SeriesData[1].name}</h1>
-    </>
+    <ul>
+      {SeriesData.map((curEle) => (<SeriesCard key={curEle.id} data={curEle}  />))}
+    </ul>
   );
-};
+}
 
 export default NetflixSeries;
